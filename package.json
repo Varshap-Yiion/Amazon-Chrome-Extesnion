@@ -21,6 +21,8 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@types/chrome": "0.0.81",
+    "angular5-csv": "^0.2.11",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "cheerio": "^1.0.0-rc.2",
