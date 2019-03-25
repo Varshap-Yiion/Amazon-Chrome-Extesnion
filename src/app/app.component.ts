@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {CommonService} from "./core/common.service";
 import * as $ from 'jquery';
@@ -17,7 +17,10 @@ export class AppComponent {
   public productList: any = [];
   public from_page: number;
   public to_page: number;
-  constructor(private _commonService: CommonService, private _layoutService: LayoutService) {
+  public show: boolean = false;
+  public buttonName: any = 'Search and Download';
+
+  constructor(private _commonService: CommonService, private _layoutService: LayoutService ) {
   }
 
   ngOnInit() {
@@ -93,36 +96,42 @@ export class AppComponent {
 
   doSearchDownload() {
     this._layoutService.showLoading();
+    this.show = !this.show;
+    console.log(this.from_page, this.to_page);
+
     var _this = this;
     chrome.tabs.query({
       currentWindow: true,
       active: true
-    }, function(tabs) {
-        // console.log(tabs);
+    }, function (tabs) {
       if (tabs.length > 0) {
-          if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
-            // that.tabId = tabs[0].id;
-            var tabURL = tabs[0].url;
-            console.log(tabURL);
-          }
+        if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
+          // that.tabId = tabs[0].id;
+          var tabURL = tabs[0].url;
+          console.log(tabURL);
         }
+      }
 
-        // let mainURL = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&field-keywords=";
-        let mainURL = tabURL;
-        _this.asinList = [];
-        for (let i = _this.from_page; i <= _this.to_page; i++) {
-          let perms = '&page=' + i;
-          let url = mainURL + perms;
-          let result = _this.getAsinList(url);
-          _this.asinList = _this.asinList.concat(result);
+      // let mainURL = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&field-keywords=";
+      let mainURL = tabURL;
+      _this.asinList = [];
+      for (let i = _this.from_page; i <= _this.to_page; i++) {
+        let perms = '&page=' + i;
+        let url = mainURL + perms;
+        let result = _this.getAsinList(url);
+        _this.asinList = _this.asinList.concat(result);
 
-        }
-        console.log(_this.asinList);
+      }
+      console.log(_this.asinList.length);
 
       _this.processForAsin();
       _this._layoutService.hideLoading();
-      });
+    });
 
+  }
+
+  cancelDownload() {
+    this.show = !this.show;
   }
 
   processForAsin() {
@@ -138,3 +147,6 @@ export class AppComponent {
     new Angular5Csv(this.productList, 'My Report');
   }
 }
+
+
+

@@ -85,8 +85,8 @@
 </header>
 <!-- HEADER END -->
 <!-- CONTAINER START -->
-<section>
-  <div class="tab-section section">
+<section class="section">
+  <div class="tab-section">
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="p-search-tab" data-toggle="tab" href="#p-search" role="tab"
@@ -718,10 +718,10 @@
                   </div>
 
                   <div class="inner-sec">
-                    <button type="button" id="btn" class="btn btn-success" (click)="doSearchDownload()">Search and
-                      Download
+                    <button type="button" id="btn" class="btn btn-success" (click)="doSearchDownload()">{{buttonName}}
                     </button>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -733,13 +733,32 @@
       <div class="tab-pane fade" id="p-home" role="tabpanel" aria-labelledby="p-home">...</div>
     </div>
   </div>
+
+  <!--<ng-container >-->
+  <div  *ngIf="show"  class="counting">
+    <div class="content">
+      <div class="loader">
+      </div>
+      <div>
+        Scanned Pages: {{from_page}} - {{to_page}}
+      </div>
+      <div>
+        Total Product: {{this.productList.length}}
+      </div>
+      <div class="btn-group">
+        <!--<div id="action_finish" class="btn btn-primary" data-lang="txt0045">Download</div>-->
+        <div (click)="cancelDownload()" class="btn btn-danger" data-lang="txt0046">Cancel</div></div>
+    </div>
+  </div>
+  <!--</ng-container>-->
+
 </section>
 <!-- CONTAINER END -->
+
 <!-- FOOTER START -->
 <footer>
   <div class="footer">
   </div>
 </footer>
 <!-- FOOTER END -->
-
 
