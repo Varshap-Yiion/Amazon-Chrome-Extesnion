@@ -4,6 +4,7 @@ import {CommonService} from "./core/common.service";
 import * as $ from 'jquery';
 import {stringDistance} from "codelyzer/util/utils";
 import {Angular5Csv} from "angular5-csv/dist/Angular5-csv";
+import {LayoutService} from "./core/layout.service";
 
 @Component({
   selector: 'app-root',
@@ -16,12 +17,13 @@ export class AppComponent {
   public productList: any = [];
   public from_page: number;
   public to_page: number;
-
-  constructor(private _commonService: CommonService) {
+  currentURL='';
+  constructor(private _commonService: CommonService, private _layoutService: LayoutService) {
+    this.currentURL = window.location.href;
   }
 
   ngOnInit() {
-
+console.log(this.currentURL );
   }
 
 
@@ -40,7 +42,7 @@ export class AppComponent {
 
         // product
         let product_title = parsedHtml.getElementById('productTitle').innerText.trim();
-        let product_price = parsedHtml.getElementById('price_inside_buybox').innerText.trim();
+        let product_price = parsedHtml.getElementById('priceblock_ourprice').innerText.trim();
         let product_brand = parsedHtml.getElementById('bylineInfo').innerText.trim();
         let product_quantity_arr = parsedHtml.getElementById('quantity').innerHTML.match(/<option[^>]*>([^<]*)<\/option>/g);
         let product_quantity = product_quantity_arr[product_quantity_arr.length - 1].replace(/(<([^>]+)>)/ig, "").trim();
@@ -93,9 +95,30 @@ export class AppComponent {
 
 
   doSearchDownload() {
+    alert(this.currentURL );
     // chrome.tabs.getSelected(
     // chrome.tabs.getCurrent();
-
+    this._layoutService.showLoading();
+    // Chrome.tabs.getSelected(tab) {
+    //
+    // }
+    // console.log(this.currentURL);
+    // var that = this;
+    chrome.tabs.query({
+      currentWindow: true,
+      active: true
+    }, function(tabs) {
+      console.log(tabs[0].url);
+      if (tabs.length > 0) {
+        if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
+          // that.tabId = tabs[0].id;
+          var tabURL = tabs[0].url;
+          console.log(tabURL);
+          // that.tabTitle = tabs[0].title;
+          // that.favIconUrl = tabs[0].favIconUrl;
+        }
+      }
+    });
     let mainURL = 'https://www.amazon.com/s?k=cable&i=electronics-intl-ship&ref=nb_sb_noss';
     this.asinList = [];
     for (let i = this.from_page; i <= this.to_page; i++) {
@@ -106,10 +129,12 @@ export class AppComponent {
     }
     console.log(this.asinList);
     this.processForAsin();
+    this._layoutService.hideLoading();
+
   }
 
   processForAsin() {
-    for (let i = 0; i <= this.asinList.length; i++) {
+    for (let i = 0; i < this.asinList.length; i++) {
       let result = this.getAsinDetail(this.asinList[i]);
       this.productList = this.productList.concat(result);
     }
