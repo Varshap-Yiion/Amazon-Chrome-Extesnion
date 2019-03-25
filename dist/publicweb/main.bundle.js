@@ -71,11 +71,8 @@ var AppComponent = (function () {
         this.title = 'app';
         this.asinList = [];
         this.productList = [];
-        this.currentURL = '';
-        this.currentURL = window.location.href;
     }
     AppComponent.prototype.ngOnInit = function () {
-        console.log(this.currentURL);
     };
     AppComponent.prototype.getAsinDetail = function ($asin) {
         var url = 'https://www.amazon.com/dp/';
@@ -85,7 +82,6 @@ var AppComponent = (function () {
             url: url,
             async: false,
             success: function (data) {
-                // console.log(data);
                 var parser = new DOMParser();
                 var parsedHtml = parser.parseFromString(data, 'text/html');
                 // product
@@ -136,41 +132,33 @@ var AppComponent = (function () {
     //   alert('adsad');
     // });
     AppComponent.prototype.doSearchDownload = function () {
-        alert(this.currentURL);
-        // chrome.tabs.getSelected(
-        // chrome.tabs.getCurrent();
         this._layoutService.showLoading();
-        // Chrome.tabs.getSelected(tab) {
-        //
-        // }
-        // console.log(this.currentURL);
-        // var that = this;
+        var _this = this;
         chrome.tabs.query({
             currentWindow: true,
             active: true
         }, function (tabs) {
-            console.log(tabs[0].url);
+            // console.log(tabs);
             if (tabs.length > 0) {
                 if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
                     // that.tabId = tabs[0].id;
                     var tabURL = tabs[0].url;
                     console.log(tabURL);
-                    // that.tabTitle = tabs[0].title;
-                    // that.favIconUrl = tabs[0].favIconUrl;
                 }
             }
+            // let mainURL = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&field-keywords=";
+            var mainURL = tabURL;
+            _this.asinList = [];
+            for (var i = _this.from_page; i <= _this.to_page; i++) {
+                var perms = '&page=' + i;
+                var url = mainURL + perms;
+                var result = _this.getAsinList(url);
+                _this.asinList = _this.asinList.concat(result);
+            }
+            console.log(_this.asinList);
+            _this.processForAsin();
+            _this._layoutService.hideLoading();
         });
-        var mainURL = 'https://www.amazon.com/s?k=cable&i=electronics-intl-ship&ref=nb_sb_noss';
-        this.asinList = [];
-        for (var i = this.from_page; i <= this.to_page; i++) {
-            var perms = '&page=' + i;
-            var url = mainURL + perms;
-            var result = this.getAsinList(url);
-            this.asinList = this.asinList.concat(result);
-        }
-        console.log(this.asinList);
-        this.processForAsin();
-        this._layoutService.hideLoading();
     };
     AppComponent.prototype.processForAsin = function () {
         for (var i = 0; i < this.asinList.length; i++) {

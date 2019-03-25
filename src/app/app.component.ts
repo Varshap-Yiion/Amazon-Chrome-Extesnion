@@ -17,13 +17,10 @@ export class AppComponent {
   public productList: any = [];
   public from_page: number;
   public to_page: number;
-  currentURL='';
   constructor(private _commonService: CommonService, private _layoutService: LayoutService) {
-    this.currentURL = window.location.href;
   }
 
   ngOnInit() {
-console.log(this.currentURL );
   }
 
 
@@ -36,7 +33,6 @@ console.log(this.currentURL );
       url: url,
       async: false,
       success: function (data) {
-        // console.log(data);
         let parser = new DOMParser();
         let parsedHtml = parser.parseFromString(data, 'text/html');
 
@@ -52,7 +48,7 @@ console.log(this.currentURL );
           'Price': product_price,
           'Brand': product_brand,
           'Quantity': product_quantity
-        }
+        };
         console.log(product_title);
         console.log(product_price);
         console.log(product_brand);
@@ -78,6 +74,7 @@ console.log(this.currentURL );
           return item;
         });
         _result = result.filter(item => item != "");
+
       }
     });
     return _result;
@@ -95,41 +92,36 @@ console.log(this.currentURL );
 
 
   doSearchDownload() {
-    alert(this.currentURL );
-    // chrome.tabs.getSelected(
-    // chrome.tabs.getCurrent();
     this._layoutService.showLoading();
-    // Chrome.tabs.getSelected(tab) {
-    //
-    // }
-    // console.log(this.currentURL);
-    // var that = this;
+    var _this = this;
     chrome.tabs.query({
       currentWindow: true,
       active: true
     }, function(tabs) {
-      console.log(tabs[0].url);
+        // console.log(tabs);
       if (tabs.length > 0) {
-        if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
-          // that.tabId = tabs[0].id;
-          var tabURL = tabs[0].url;
-          console.log(tabURL);
-          // that.tabTitle = tabs[0].title;
-          // that.favIconUrl = tabs[0].favIconUrl;
+          if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
+            // that.tabId = tabs[0].id;
+            var tabURL = tabs[0].url;
+            console.log(tabURL);
+          }
         }
-      }
-    });
-    let mainURL = 'https://www.amazon.com/s?k=cable&i=electronics-intl-ship&ref=nb_sb_noss';
-    this.asinList = [];
-    for (let i = this.from_page; i <= this.to_page; i++) {
-      let perms = '&page=' + i;
-      let url = mainURL + perms;
-      let result = this.getAsinList(url);
-      this.asinList = this.asinList.concat(result);
-    }
-    console.log(this.asinList);
-    this.processForAsin();
-    this._layoutService.hideLoading();
+
+        // let mainURL = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&field-keywords=";
+        let mainURL = tabURL;
+        _this.asinList = [];
+        for (let i = _this.from_page; i <= _this.to_page; i++) {
+          let perms = '&page=' + i;
+          let url = mainURL + perms;
+          let result = _this.getAsinList(url);
+          _this.asinList = _this.asinList.concat(result);
+
+        }
+        console.log(_this.asinList);
+
+      _this.processForAsin();
+      _this._layoutService.hideLoading();
+      });
 
   }
 
