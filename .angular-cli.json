@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist/publicweb",
+      "outDir": "dist/amazon-tool-chrome",
       "assets": [
         "assets",
         "src",
