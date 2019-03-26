@@ -726,6 +726,7 @@
               </div>
             </div>
           </div>
+
         <!--</form>-->
 
       </div>
@@ -743,11 +744,12 @@
         Scanned Pages: {{from_page}} - {{to_page}}
       </div>
       <div>
-        Total Product: {{this.productList.length}}
+        Total Product: {{asinList.length}} - {{productList.length}}
       </div>
       <div class="btn-group">
         <!--<div id="action_finish" class="btn btn-primary" data-lang="txt0045">Download</div>-->
-        <div (click)="cancelDownload()" class="btn btn-danger" data-lang="txt0046">Cancel</div></div>
+        <div (click)="cancelDownload()" class="btn btn-danger" data-lang="txt0046">Cancel</div>
+      </div>
     </div>
   </div>
   <!--</ng-container>-->

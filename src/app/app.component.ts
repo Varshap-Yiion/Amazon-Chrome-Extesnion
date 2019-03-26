@@ -4,7 +4,6 @@ import {CommonService} from "./core/common.service";
 import * as $ from 'jquery';
 import {stringDistance} from "codelyzer/util/utils";
 import {Angular5Csv} from "angular5-csv/dist/Angular5-csv";
-import {LayoutService} from "./core/layout.service";
 
 @Component({
   selector: 'app-root',
@@ -20,7 +19,7 @@ export class AppComponent {
   public show: boolean = false;
   public buttonName: any = 'Search and Download';
 
-  constructor(private _commonService: CommonService, private _layoutService: LayoutService ) {
+  constructor(private _commonService: CommonService) {
   }
 
   ngOnInit() {
@@ -95,9 +94,8 @@ export class AppComponent {
 
 
   doSearchDownload() {
-    this._layoutService.showLoading();
-    this.show = !this.show;
     console.log(this.from_page, this.to_page);
+    this.show = !this.show;
 
     var _this = this;
     chrome.tabs.query({
@@ -112,7 +110,7 @@ export class AppComponent {
         }
       }
 
-      // let mainURL = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Darts-crafts&field-keywords=";
+      // let mainURL = "https://www.amazon.com/s?k=cable&i=electronics-intl-ship&ref=nb_sb_noss";
       let mainURL = tabURL;
       _this.asinList = [];
       for (let i = _this.from_page; i <= _this.to_page; i++) {
@@ -122,10 +120,9 @@ export class AppComponent {
         _this.asinList = _this.asinList.concat(result);
 
       }
-      console.log(_this.asinList.length);
+    console.log(_this.asinList.length);
+        _this.processForAsin();
 
-      _this.processForAsin();
-      _this._layoutService.hideLoading();
     });
 
   }
@@ -144,8 +141,10 @@ export class AppComponent {
   }
 
   downloadCsv() {
-    new Angular5Csv(this.productList, 'My Report');
+    var head = ['Product Title', 'Price', 'Brand', 'Quantity'];
+    new Angular5Csv(this.productList, 'My Report', {headers: (head)});
   }
+
 }
 
 
