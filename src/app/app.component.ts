@@ -1,4 +1,4 @@
-import {Component, ViewChild} from '@angular/core';
+import {ChangeDetectorRef, Component, NgZone, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {CommonService} from "./core/common.service";
 import * as $ from 'jquery';
@@ -15,16 +15,36 @@ export class AppComponent {
   public asinList: any = [];
   public productList: any = [];
   public from_page: number;
+  public tabUrl: string;
+  public asinNumber: any = [];
+  public tabs: any = [];
+  public temp: boolean = false;
   public to_page: number;
-  public show: boolean = false;
+  public overlaypopup: boolean = false;
   public buttonName: any = 'Search and Download';
 
-  constructor(private _commonService: CommonService) {
+  constructor(private _commonService: CommonService, private zone: NgZone, private ref: ChangeDetectorRef) {
   }
 
   ngOnInit() {
   }
 
+  doSearchDownload() {
+    // this.overlaypopup = true;
+    chrome.tabs.query({
+      currentWindow: true,
+      active: true
+    }, (tabs) => {
+      if (tabs.length > 0) {
+        if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
+          var tabUrl = tabs[0].url;
+        }
+      }
+      this.zone.run(() => {
+        this.processMainlist(tabUrl);
+      });
+    });
+  }
 
   getAsinDetail($asin) {
     let url = 'https://www.amazon.com/dp/';
@@ -51,10 +71,7 @@ export class AppComponent {
           'Brand': product_brand,
           'Quantity': product_quantity
         };
-        console.log(product_title);
-        console.log(product_price);
-        console.log(product_brand);
-        console.log(product_quantity);
+        console.log(_result);
       }
     });
     return _result;
@@ -82,69 +99,38 @@ export class AppComponent {
     return _result;
   }
 
-  // this._commonService.getProductList().subscribe((response: any) => {
-  //   console.log(response);
-  //   let parser = new DOMParser();
-  //   let parsedHtml = parser.parseFromString(response, 'text/html');
-  //   // let imagelist = parsedHtml.getElementsByClassName('s-result-list sg-row').innerHTML;
-  //   // console.log("imagelist"+imagelist);
-  //   console.log('parser' + parser);
-  //   alert('adsad');
-  // });
-
-
-  doSearchDownload() {
-    console.log(this.from_page, this.to_page);
-    this.show = !this.show;
-
-    var _this = this;
-    chrome.tabs.query({
-      currentWindow: true,
-      active: true
-    }, function (tabs) {
-      if (tabs.length > 0) {
-        if (tabs[0].url !== undefined && tabs[0].url !== null && tabs[0].url !== '') {
-          // that.tabId = tabs[0].id;
-          var tabURL = tabs[0].url;
-          console.log(tabURL);
-        }
-      }
-
-      // let mainURL = "https://www.amazon.com/s?k=cable&i=electronics-intl-ship&ref=nb_sb_noss";
-      let mainURL = tabURL;
-      _this.asinList = [];
-      for (let i = _this.from_page; i <= _this.to_page; i++) {
-        let perms = '&page=' + i;
-        let url = mainURL + perms;
-        let result = _this.getAsinList(url);
-        _this.asinList = _this.asinList.concat(result);
-
-      }
-    console.log(_this.asinList.length);
-        _this.processForAsin();
-
-    });
-
+  processMainlist(tabUrl) {
+    this.asinList = [];
+    for (let i = this.from_page; i <= this.to_page; i++) {
+      let perms = '&page=' + i;
+      let url = tabUrl + perms;
+      let result = this.getAsinList(url);
+      this.asinList = this.asinList.concat(result);
+      this.asinNumber = this.asinList.length;
+      console.log("ASIN Total", this.asinNumber);
+      this.ref.detectChanges();
+    }
+    this.processForAsin();
   }
 
   cancelDownload() {
-    this.show = !this.show;
+    this.overlaypopup = !this.overlaypopup;
   }
 
   processForAsin() {
     for (let i = 0; i < this.asinList.length; i++) {
       let result = this.getAsinDetail(this.asinList[i]);
       this.productList = this.productList.concat(result);
+      console.log('process asin', this.asinList[i]);
     }
-    console.log('productList', this.productList);
     this.downloadCsv();
+    this.overlaypopup = false;
   }
 
   downloadCsv() {
     var head = ['Product Title', 'Price', 'Brand', 'Quantity'];
     new Angular5Csv(this.productList, 'My Report', {headers: (head)});
   }
-
 }
 
 

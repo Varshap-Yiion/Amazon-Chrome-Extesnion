@@ -108,6 +108,7 @@
             <h6 class="card-header">Search Settings <img src="assets/youtube-logo.png" style="float:right;"></h6>
 
             <div class="card-body">
+
               <div class="row">
                 <div class="col-md-6">
                   <!-- Default unchecked -->
@@ -716,7 +717,12 @@
                       <label class="custom-control-label label-title" for="check5">.csv format also download</label>
                     </div>
                   </div>
-
+                  <div>
+                    Scanned Pages: {{from_page}} - {{to_page}}
+                  </div>
+                  <div>
+                    Total Product Process: {{ productList.length}} - {{asinList.length}}
+                  </div>
                   <div class="inner-sec">
                     <button type="button" id="btn" class="btn btn-success" (click)="doSearchDownload()">{{buttonName}}
                     </button>
@@ -736,7 +742,7 @@
   </div>
 
   <!--<ng-container >-->
-  <div  *ngIf="show"  class="counting">
+  <div  *ngIf="overlaypopup"  class="counting">
     <div class="content">
       <div class="loader">
       </div>
@@ -744,7 +750,7 @@
         Scanned Pages: {{from_page}} - {{to_page}}
       </div>
       <div>
-        Total Product: {{asinList.length}} - {{productList.length}}
+        Total Product Process: {{ productList.length}} - {{asinList.length}}
       </div>
       <div class="btn-group">
         <!--<div id="action_finish" class="btn btn-primary" data-lang="txt0045">Download</div>-->
