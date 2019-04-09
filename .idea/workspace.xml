@@ -1,94 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="269ca642-dd77-4ee4-9bb7-eb3c91e43ba5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/app-routing.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/app.component.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/app.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/app.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/app/tab-id.injector.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/browserslist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/environments/environment.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/manifest.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/polyfills.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/tslint.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/src/typings.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/tslint.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome/src/backgroundPage.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome/src/contentPage.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome/tsconfig.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chrome/webpack.config.prod.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.angular-cli.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/assets/amazon-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/assets/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/assets/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/assets/youtube-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/inline.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/inline.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/main.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/main.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/polyfills.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/polyfills.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/styles.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/styles.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/vendor.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/publicweb/vendor.bundle.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/app.e2e-spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/app.po.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/e2e/tsconfig.e2e.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/protractor.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/abc.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.component.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.component.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/app.component.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/core/common.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/core/core.module.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/app/core/layout.service.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/amazon-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/youtube-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bootstrap-grid.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/environments/environment.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/layout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/polyfills.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tsconfig.spec.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/typings.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tslint.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/angular/.editorconfig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/app/app.module.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.module.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/assets/.gitkeep" afterPath="$PROJECT_DIR$/angular/src/assets/.gitkeep" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterPath="$PROJECT_DIR$/angular/src/environments/environment.prod.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/angular/src/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/styles.css" afterPath="$PROJECT_DIR$/angular/src/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tsconfig.app.json" afterPath="$PROJECT_DIR$/angular/src/tsconfig.app.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/angular/tsconfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="6f7dcd34-aadc-4f47-8fb4-e49ebdb416a1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.html" afterPath="$PROJECT_DIR$/angular/src/app/app.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/src/app/app.component.ts" afterPath="$PROJECT_DIR$/angular/src/app/app.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,37 +17,73 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Amazon Tool Pro" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/src/app/app.module.ts">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="524" column="65" lean-forward="false" selection-start-line="524" selection-start-column="41" selection-end-line="524" selection-end-column="65" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+                <element signature="e#22413#22420#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="125" column="72" lean-forward="false" selection-start-line="125" selection-start-column="53" selection-end-line="125" selection-end-column="72" />
+              <folding>
+                <element signature="e#0#91#0" expanded="true" />
+                <element signature="n#!!block;n#doSearchDownload#0;n#AppComponent#0" expanded="false" />
+                <element signature="n#!!block;n#processMainlist#0;n#AppComponent#0" expanded="false" />
+                <element signature="n#!!block;n#getAsinList#0;n#AppComponent#0" expanded="false" />
+                <element signature="n#!!block;n#processForAsin#0;n#AppComponent#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/src/app/app.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="app.component.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="100">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <element signature="e#41036#41270#2" expanded="true" />
+                <element signature="e#42143#42296#1" expanded="true" />
+                <element signature="e#42337#42571#1" expanded="true" />
+                <element signature="e#45830#46106#2" expanded="true" />
+                <element signature="e#47007#47160#1" expanded="true" />
+                <element signature="e#47201#47477#1" expanded="true" />
+                <element signature="e#80748#80935#2" expanded="true" />
+                <element signature="e#81184#81320#2" expanded="true" />
+                <element signature="e#81761#81894#2" expanded="true" />
+                <element signature="e#83553#83706#1" expanded="true" />
+                <element signature="e#98090#98320#2" expanded="true" />
+                <element signature="e#99309#99545#2" expanded="true" />
+                <element signature="e#134484#134661#2" expanded="true" />
+                <element signature="e#134715#134892#2" expanded="true" />
+                <marker date="1554718274057" expanded="true" signature="0:659" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,40 +92,30 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>search fil</find>
-      <find>Search and Download</find>
-      <find>from_page</find>
-      <find>ngmod</find>
-      <find>ajax</find>
-      <find>images/</find>
-      <find>ng-bootstrap</find>
-      <find>bootstrap</find>
-      <find>centered</find>
-      <find>-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,&quot;Helvetica Neue&quot;,Arial,&quot;Noto Sans&quot;,sans-serif,&quot;Apple Color Emoji&quot;,&quot;Segoe UI Emoji&quot;,&quot;Segoe UI Symbol&quot;,&quot;Noto Color Emoji&quot;</find>
-      <find>body</find>
-      <find>.header</find>
-      <find>html</find>
-      <find>csv</find>
-      <find>card-body</find>
-      <find>empty</find>
-      <find>zone</find>
-      <find>tabs</find>
-      <find>processForAsin</find>
-      <find>show</find>
-      <find>over</find>
-      <find>Search Settings</find>
-      <find>asinNumber</find>
-      <find>tabUrl</find>
-      <find>processMainlist</find>
-      <find>overlaypopup</find>
-      <find>$</find>
-      <find>$.</find>
-      <find>asinList</find>
-      <find>boot</find>
+      <find>tab-section</find>
+      <find>navbar-brand</find>
+      <find>myTabContent</find>
+      <find>card card-box5</find>
+      <find>col-md-6</find>
+      <find>tab-content</find>
+      <find>p-search</find>
+      <find>p-update</find>
+      <find>.navbar</find>
+      <find>.navbar-brand</find>
+      <find>p-updates</find>
+      <find>.btn</find>
+      <find>alert alert-warning alert-dismissible fade show</find>
+      <find>.alert-warning</find>
+      <find>Compare to Sales Country</find>
+      <find>Minimum</find>
+      <find>html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video</find>
+      <find>temp</find>
+      <find>Minimum Stock</find>
+      <find>result</find>
+      <find>Stock code</find>
+      <find>Profit Margin</find>
+      <find>Unlist Options</find>
     </findStrings>
-    <replaceStrings>
-      <replace>assets/</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -178,27 +123,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/styles.css" />
-        <option value="$PROJECT_DIR$/src/app/core/common.service.ts" />
-        <option value="$PROJECT_DIR$/.angular-cli.json" />
-        <option value="$PROJECT_DIR$/src/app/core/core.module.ts" />
-        <option value="$PROJECT_DIR$/src/app/core/layout.service.ts" />
-        <option value="$PROJECT_DIR$/dist/publicweb/manifest.json" />
-        <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/src/tsconfig.app.json" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/custom.css" />
-        <option value="$PROJECT_DIR$/src/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/app/app.component.css" />
-        <option value="$PROJECT_DIR$/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/angular/src/index.html" />
+        <option value="$PROJECT_DIR$/angular/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/angular/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/angular/src/app/app.component.ts" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path />
@@ -213,13 +148,12 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1395" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1609" />
+    <option name="height" value="865" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -235,37 +169,59 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="amazon-chrome-extension" type="b2602c69:ProjectViewProjectNode" />
-              <item name="amazon-chrome-extension" type="462c0819:PsiDirectoryNode" />
+              <item name="Amazon Tool Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amazon Tool Pro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amazon Tool Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amazon Tool Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amazon Tool Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amazon Tool Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amazon Tool Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amazon Tool Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Amazon Tool Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Amazon Tool Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="angular" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PickWhiz-ui" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../atomicDBnew" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
+    <property name="node.js.selected.package.tslint" value="E:\xampp\htdocs\Amazon Tool Pro\node_modules\tslint" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="E:\xampp\htdocs\Amazon Tool Pro\src" />
-      <recent name="E:\xampp\htdocs\Amazon Tool Pro\dist\publicweb" />
-      <recent name="E:\xampp\htdocs\Amazon Tool Pro\dist\publicweb\assets" />
-      <recent name="E:\xampp\htdocs\Amazon Tool Pro\src\assets" />
+      <recent name="E:\xampp\htdocs\Amazon Tool Pro\angular\src\assets" />
+      <recent name="E:\xampp\htdocs\Amazon Tool Pro\angular\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,53 +241,42 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="269ca642-dd77-4ee4-9bb7-eb3c91e43ba5" name="Default" comment="" />
-      <created>1553244962405</created>
+      <changelist id="6f7dcd34-aadc-4f47-8fb4-e49ebdb416a1" name="Default" comment="" />
+      <created>1554448347074</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1553244962405</updated>
-      <workItem from="1553244964818" duration="9556000" />
-      <workItem from="1553322321731" duration="6390000" />
-      <workItem from="1553335476667" duration="4787000" />
-      <workItem from="1553485686815" duration="9966000" />
-      <workItem from="1553495769030" duration="81000" />
-      <workItem from="1553507230931" duration="10000" />
-      <workItem from="1553517876584" duration="8000" />
-      <workItem from="1553571865471" duration="8021000" />
-      <workItem from="1553683870114" duration="6000" />
-      <workItem from="1553744848644" duration="7700000" />
-      <workItem from="1553830856719" duration="14562000" />
-      <workItem from="1553849160643" duration="6306000" />
-      <workItem from="1554359319842" duration="775000" />
-      <workItem from="1554361666262" duration="28000" />
-      <workItem from="1554384855272" duration="333000" />
+      <updated>1554448347074</updated>
+      <workItem from="1554448348543" duration="4429000" />
+      <workItem from="1554457459250" duration="12076000" />
+      <workItem from="1554695633599" duration="30667000" />
+      <workItem from="1554781974605" duration="28780000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107698000" />
+    <option name="totallyTimeSpent" value="75952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1399" height="877" extended-state="6" />
+    <frame x="-7" y="2" width="1609" height="865" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26850507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.015027323" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.154042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24680308" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17076503" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -341,19 +286,18 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.218035" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26742712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30601093" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30191258" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2596154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,256 +307,305 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/app.component.ts</url>
-          <line>101</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+        <state relative-caret-position="11900">
+          <caret line="595" column="87" lean-forward="false" selection-start-line="595" selection-start-column="87" selection-end-line="595" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="e#22413#22420#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tsconfig.app.json">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="77" lean-forward="false" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
+        <state relative-caret-position="360">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/karma.conf.js">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#41036#41270#2" expanded="true" />
+            <element signature="e#42143#42296#1" expanded="true" />
+            <element signature="e#42337#42571#1" expanded="true" />
+            <element signature="e#45830#46106#2" expanded="true" />
+            <element signature="e#47007#47160#1" expanded="true" />
+            <element signature="e#47201#47477#1" expanded="true" />
+            <element signature="e#80748#80935#2" expanded="true" />
+            <element signature="e#81184#81320#2" expanded="true" />
+            <element signature="e#81761#81894#2" expanded="true" />
+            <element signature="e#83553#83706#1" expanded="true" />
+            <element signature="e#98090#98320#2" expanded="true" />
+            <element signature="e#99309#99545#2" expanded="true" />
+            <element signature="e#134484#134661#2" expanded="true" />
+            <element signature="e#134715#134892#2" expanded="true" />
+            <marker date="1554718274057" expanded="true" signature="0:659" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3920">
+          <caret line="196" column="26" lean-forward="false" selection-start-line="196" selection-start-column="26" selection-end-line="196" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+            <element signature="n#!!block;n#doSearchDownload#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processMainlist#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#getAsinList#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processForAsin#0;n#AppComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="e#22413#22420#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1773">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json.txt" />
-    <entry file="file://$PROJECT_DIR$/dist/icon.png" />
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/dist/amazon-chrome-extension/polyfills.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/dist/amazon-chrome-extension/styles.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/src/app/core/index.ts" />
-    <entry file="file://$PROJECT_DIR$/src/app/core/customer.service.ts" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/common/src/common_module.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/common/http/src/client.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/axios/index.d.ts" />
-    <entry file="file://$PROJECT_DIR$/dist/amazon-chrome-extension/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/cheerio/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="278" column="15" lean-forward="false" selection-start-line="278" selection-start-column="15" selection-end-line="278" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/common.service.ts">
+    <entry file="file://$PROJECT_DIR$/angular/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protractor.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/core.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/abc.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/core/layout.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="23" column="2" lean-forward="false" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icon.png" />
-    <entry file="file://$PROJECT_DIR$/dist/publicweb/index.html" />
-    <entry file="file://$PROJECT_DIR$/dist/publicweb/icon.png" />
-    <entry file="file://$PROJECT_DIR$/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/dist/publicweb/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/src/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/.angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/publicweb/main.bundle.js.map" />
-    <entry file="file://$PROJECT_DIR$/dist/publicweb/main.bundle.js" />
-    <entry file="file://$PROJECT_DIR$/src/layout.css" />
-    <entry file="file://$PROJECT_DIR$/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/src/custom.css" />
-    <entry file="file://$PROJECT_DIR$/node_modules/angular5-csv/dist/Angular5-csv.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="35" column="59" lean-forward="false" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/chrome/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="5520" column="20" lean-forward="false" selection-start-line="5520" selection-start-column="20" selection-end-line="5520" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tsconfig.app.json">
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="120000">
+          <caret line="6000" column="1" lean-forward="true" selection-start-line="6000" selection-start-column="1" selection-end-line="6000" selection-end-column="1" />
+          <folding>
+            <element signature="e#41036#41270#2" expanded="true" />
+            <element signature="e#42143#42296#1" expanded="true" />
+            <element signature="e#42337#42571#1" expanded="true" />
+            <element signature="e#45830#46106#2" expanded="true" />
+            <element signature="e#47007#47160#1" expanded="true" />
+            <element signature="e#47201#47477#1" expanded="true" />
+            <element signature="e#80748#80935#2" expanded="true" />
+            <element signature="e#81184#81320#2" expanded="true" />
+            <element signature="e#81761#81894#2" expanded="true" />
+            <element signature="e#83553#83706#1" expanded="true" />
+            <element signature="e#98090#98320#2" expanded="true" />
+            <element signature="e#99309#99545#2" expanded="true" />
+            <element signature="e#134484#134661#2" expanded="true" />
+            <element signature="e#134715#134892#2" expanded="true" />
+            <marker date="1554718274057" expanded="true" signature="0:659" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/bootstrap-grid.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="18" lean-forward="false" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="753" column="12" lean-forward="false" selection-start-line="748" selection-start-column="6" selection-end-line="753" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="100">
+          <caret line="5" column="673" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="124" column="30" lean-forward="true" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+            <element signature="n#!!block;n#doSearchDownload#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processMainlist#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#getAsinList#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processForAsin#0;n#AppComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="e#22413#22420#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="39" column="31" lean-forward="false" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+            <element signature="n#!!block;n#doSearchDownload#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processMainlist#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#getAsinList#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processForAsin#0;n#AppComponent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/dist/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="215" column="21" lean-forward="false" selection-start-line="215" selection-start-column="21" selection-end-line="215" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/dist/assets/js/custom.min.js" />
+    <entry file="file://$PROJECT_DIR$/angular/dist/assets/css/layout.css" />
+    <entry file="file://$PROJECT_DIR$/angular/dist/assets/css/custom.css" />
+    <entry file="file://$PROJECT_DIR$/angular/dist/assets/css/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/angular/src/layout.css" />
+    <entry file="file://$PROJECT_DIR$/angular/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/bootstrap.min.css" />
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/js/jquery-3.3.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/js/bootstrap.min.js" />
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="673" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/aria.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="1189" column="22" lean-forward="false" selection-start-line="1189" selection-start-column="22" selection-end-line="1189" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/assets/bootstrap-grid.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="49" lean-forward="false" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#41036#41270#2" expanded="true" />
+            <element signature="e#42143#42296#1" expanded="true" />
+            <element signature="e#42337#42571#1" expanded="true" />
+            <element signature="e#45830#46106#2" expanded="true" />
+            <element signature="e#47007#47160#1" expanded="true" />
+            <element signature="e#47201#47477#1" expanded="true" />
+            <element signature="e#80748#80935#2" expanded="true" />
+            <element signature="e#81184#81320#2" expanded="true" />
+            <element signature="e#81761#81894#2" expanded="true" />
+            <element signature="e#83553#83706#1" expanded="true" />
+            <element signature="e#98090#98320#2" expanded="true" />
+            <element signature="e#99309#99545#2" expanded="true" />
+            <element signature="e#134484#134661#2" expanded="true" />
+            <element signature="e#134715#134892#2" expanded="true" />
+            <marker date="1554718274057" expanded="true" signature="0:659" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="20561" column="12" lean-forward="false" selection-start-line="20561" selection-start-column="12" selection-end-line="20561" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="524" column="65" lean-forward="false" selection-start-line="524" selection-start-column="41" selection-end-line="524" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#h6#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="false" />
+            <element signature="e#22413#22420#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="125" column="72" lean-forward="false" selection-start-line="125" selection-start-column="53" selection-end-line="125" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#91#0" expanded="true" />
+            <element signature="n#!!block;n#doSearchDownload#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processMainlist#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#getAsinList#0;n#AppComponent#0" expanded="false" />
+            <element signature="n#!!block;n#processForAsin#0;n#AppComponent#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -427,7 +427,9 @@ style="width: 20px;float:right;"></h6>
               <label class="label-title">Unlist Options</label>
 
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox2">
+                <input type="checkbox" class="custom-control-input" id="checkbox2" [(ngModel)]="trademaked_product" name="trademaked_product_field"
+                       #trademaked_product_field="ngModel">
+
                 <label class="custom-control-label label-title" for="checkbox2">Trademarked products</label>
               </div>
               <div class="custom-control custom-checkbox">
@@ -494,7 +496,9 @@ style="width: 20px;float:right;"></h6>
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">%</span>
                     </div>
-                    <input id="number" min="1" type="number" value="25" class="form-control">
+                    <input id="number" min="1" type="number" value="25" [(ngModel)]="profit_margin" name="profit_margin_field"
+                           #profit_margin_field="ngModel" class="form-control">
+
                   </div>
                 </div>
               </div>
@@ -509,7 +513,8 @@ style="width: 20px;float:right;"></h6>
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">%</span>
                     </div>
-                    <input id="number" min="1" type="number" value="20" class="form-control">
+                    <input id="number" min="1" type="number" value="20" [(ngModel)]="amazon_commision" name="amazon_commision_field"
+                           #amazon_commision_field="ngModel" class="form-control">
                   </div>
                 </div>
               </div>
@@ -524,7 +529,8 @@ style="width: 20px;float:right;"></h6>
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">$</span>
                     </div>
-                    <input id="number" min="1" type="number" value="1.35" class="form-control">
+                    <input id="number" min="1" type="number" value="1.35" [(ngModel)]="exchange_difference" name="exchange_difference_field"
+                           #exchange_difference_field="ngModel" class="form-control">
                   </div>
                 </div>
               </div>
@@ -537,7 +543,8 @@ style="width: 20px;float:right;"></h6>
                   <span class="inner-text">STK1000, STK1001</span></div>
                 <div class="col-md-4">
                   <div class="input-group mb-3">
-                    <input type="text" value="XTQE" class="form-control">
+                    <input type="text" value="XTQE" [(ngModel)]="sku_code" name="sku_code_field"
+                           #sku_code_field="ngModel" class="form-control">
                   </div>
                 </div>
               </div>
