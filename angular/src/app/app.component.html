@@ -433,34 +433,41 @@ style="width: 20px;float:right;"></h6>
                 <label class="custom-control-label label-title" for="checkbox2">Trademarked products</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox3">
+                <input type="checkbox" class="custom-control-input" id="checkbox3" [(ngModel)]="cloud_inventory_product" name="cloud_inventory_product_field"
+                       #cloud_inventory_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox3">Products in the cloud
                   inventory</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox4">
+                <input type="checkbox" class="custom-control-input" id="checkbox4" [(ngModel)]="critical_branded_product" name="critical_branded_product_field"
+                       #critical_branded_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox5">
+                <input type="checkbox" class="custom-control-input" id="checkbox5" [(ngModel)]="discounted_product" name="discounted_product_field"
+                       #discounted_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox5">Discounted products</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox6">
+                <input type="checkbox" class="custom-control-input" id="checkbox6" [(ngModel)]="shipment_tax_product" name="shipment_tax_product_field"
+                       #shipment_tax_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox6">Shipment and tax fee uncertain
                   product</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox7">
+                <input type="checkbox" class="custom-control-input" id="checkbox7" [(ngModel)]="requiring_selection_product" name="requiring_selection_product_field"
+                       #requiring_selection_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox7">Products requiring
                   selection</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox8">
+                <input type="checkbox" class="custom-control-input" id="checkbox8" [(ngModel)]="amazon_prime_product" name="amazon_prime_product_field"
+                       #amazon_prime_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox8">Amazon Prime products</label>
               </div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox9">
+                <input type="checkbox" class="custom-control-input" id="checkbox9" [(ngModel)]="SBA_tag" name="SBA_tag_field"
+                       #SBA_tag_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox9">SBA tag product</label>
               </div>
 
