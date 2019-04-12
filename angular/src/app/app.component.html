@@ -436,12 +436,13 @@ style="width: 20px;float:right;"></h6>
                 <input type="checkbox" class="custom-control-input" id="checkbox3" [(ngModel)]="cloud_inventory_product" name="cloud_inventory_product_field"
                        #cloud_inventory_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox3">Products in the cloud
-                  inventory</label>
+                  inventory</label><button (click)="edit()">Edit</button>
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox4" [(ngModel)]="critical_branded_product" name="critical_branded_product_field"
                        #critical_branded_product_field="ngModel">
-                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label>
+                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label><button (click)="edit()">Edit</button>
+                <i class="icon-edit"></i>
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox5" [(ngModel)]="discounted_product" name="discounted_product_field"
@@ -806,4 +807,13 @@ style="width: 20px;float:right;"></h6>
   </div>
 </section>
 <!-- CONTAINER END -->
+
+ <div *ngIf="editbox">
+   <div class="card border-light mb-3 card_brand_list"><div class="card-header" data-lang="txt0125">Critical Brand List</div>
+     <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
+       <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist"  #brand="ngModel"></textarea>
+       <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="save()">Save</button>
+     </div></div>
+ </div>
+
 

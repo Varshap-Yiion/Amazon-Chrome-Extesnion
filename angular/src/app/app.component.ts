@@ -1,8 +1,8 @@
-import {ApplicationRef, ChangeDetectorRef, Component, Inject, NgZone} from '@angular/core';
+import {ApplicationRef, ChangeDetectorRef, Component, Inject, NgZone, ViewChild} from '@angular/core';
 import {TAB_ID} from './tab-id.injector';
 import {Angular5Csv} from "angular5-csv/dist/Angular5-csv";
 import {AppService} from "./app.service";
-import {noUndefined} from "@angular/compiler/src/util";
+// import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-root',
@@ -59,11 +59,17 @@ export class AppComponent {
   public result1: any = [];
   tabUrl: string;
   asinNumber: any = [];
+  product_brand: any = [];
   tabs: any = [];
   overlaypopup: boolean = false;
+  public brandlist: any = '';
+  editbox: boolean = false;
   buttonName: any = 'Search and Download';
+  // @ViewChild('edit_brand') edit_brand;
+  // public brandModal: NgbActiveModal;
 
-  constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef, public zone: NgZone, public  _appService: AppService) {
+  constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef,
+              public zone: NgZone, public  _appService: AppService) {
     // this._changeDetector.markForCheck();
   }
 
@@ -167,6 +173,8 @@ export class AppComponent {
       this.discountedproduct = (this.discounted_product) ? (this.discounted_product) : '';
       this.requiringselectionproduct = (this.requiring_selection_product) ? (this.requiring_selection_product) : '';
       this.amazonprimeproduct = (this.amazon_prime_product) ? (this.amazon_prime_product) : '';
+      this.cloudinventoryproduct = (this.cloud_inventory_product) ? (this.cloud_inventory_product) : '';
+      this.criticalbrandedproduct = (this.critical_branded_product) ? (this.critical_branded_product) : '';
       this.SBAtag = (this.SBA_tag) ? (this.SBA_tag) : '';
       console.log(this.SBAtag);
       console.log(this.discountedproduct);
@@ -179,14 +187,76 @@ export class AppComponent {
       console.log(this.profitmargin);
       console.log(this.amazoncommision);
       console.log(this.exchangedifference);
+      console.log(this.cloudinventoryproduct);
+      console.log(this.criticalbrandedproduct);
 
       console.log(this.trademakedproduct);
 
+      if (this.cloudinventoryproduct !== '') {
+        console.log('cloud inventory product');
+        console.log(product_brand);
+        console.log(this.brandlist);
 
-      if (this.discountedproduct !== '' && this.requiringselectionproduct !== '' && this.amazonprimeproduct !== '') {
+        var brandlist = this.brandlist.split('\n');
+        console.log(brandlist);
+
+        var productbrand = this.brandlist.includes( product_brand);
+        console.log(productbrand);
+
+        if (productbrand !== true) {
+          console.log('var');
+          console.log(productbrand);
+
+          let _result = {
+            'Product Title': product_title,
+            'Price': product_price,
+            'Brand': product_brand,
+            'Quantity': product_quantity
+          };
+
+          this.productList = this.productList.concat(_result);
+          console.log(this.productList);
+          if (is_last === true) {
+            this.downloadCsv();
+          }
+        }
+      }
+
+      if (this.criticalbrandedproduct !== '') {
+        console.log('critical brand');
+        console.log(product_brand);
+        console.log(this.brandlist);
+
+         var brandlist = this.brandlist.split('\n');
+        console.log(brandlist);
+
+        var productbrand = this.brandlist.includes( product_brand);
+        console.log(productbrand);
+
+        if (productbrand !== true) {
+          console.log('var');
+          console.log(productbrand);
+
+        let _result = {
+          'Product Title': product_title,
+          'Price': product_price,
+          'Brand': product_brand,
+          'Quantity': product_quantity
+        };
+
+        this.productList = this.productList.concat(_result);
+        console.log(this.productList);
+        if (is_last === true) {
+          this.downloadCsv();
+        }
+        }
+        // });
+      }
+
+     else if (this.discountedproduct !== '' && this.requiringselectionproduct !== '' && this.amazonprimeproduct !== '') {
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
 
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
         console.log('amazon prime prod');
         console.log(product_amazon_prime);
         console.log('amazon prime prod');
@@ -430,7 +500,7 @@ export class AppComponent {
           }
         }
 
-        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_discounted_price !== null && product_amazon_prime === null) {
+        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_discounted_price !== null && product_amazon_prime !== null) {
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -686,7 +756,7 @@ export class AppComponent {
           }
         }
 
-        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_discounted_price !== null && product_sold_by === null) {
+        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_discounted_price !== null && product_sold_by !== null) {
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -696,7 +766,7 @@ export class AppComponent {
       }
 
       else if (this.amazonprimeproduct !== '' && this.requiringselectionproduct !== '' && this.SBAtag !== '') {
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
         console.log('amazon prime prod');
         console.log(product_amazon_prime);
         console.log('amazon prime prod');
@@ -942,7 +1012,7 @@ export class AppComponent {
           }
         }
 
-        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_amazon_prime !== null && product_amazon_prime === null) {
+        else if (product_size_selection !== null && product_color_selection !== null && product_style_selection !== null && product_amazon_prime !== null && product_amazon_prime !== null) {
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -1115,7 +1185,7 @@ export class AppComponent {
       }
 
       else if (this.amazonprimeproduct !== '' && this.requiringselectionproduct !== '') {
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
         console.log('amazon prime prod');
         console.log(product_amazon_prime);
         console.log('amazon prime prod');
@@ -1440,7 +1510,7 @@ export class AppComponent {
 
       else if (this.discountedproduct !== '' && this.amazonprimeproduct !== '') {
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
 
         console.log('discounted prod');
         console.log(product_discounted_price);
@@ -1504,7 +1574,7 @@ export class AppComponent {
       }
 
       else if (this.amazonprimeproduct !== '' && this.SBAtag !== '') {
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
         console.log('amazon prime prod');
         console.log(product_amazon_prime);
         console.log('amazon prime prod');
@@ -1655,12 +1725,12 @@ export class AppComponent {
       else if (this.amazonprimeproduct !== '') {
         console.log('if amazon prime prod');
 
-        let product_amazon_prime = parsedHtml.getElementsByClassName('a-size-small aok-float-left ac-badge-rectangle')[0];
+        let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
         console.log('amazon prime prod');
         console.log(product_amazon_prime);
         console.log('amazon prime prod');
 
-        if (product_amazon_prime === undefined) {
+        if (product_amazon_prime === null) {
           let _result = {
             'Product Title': product_title,
             'Price': product_price,
@@ -1750,7 +1820,7 @@ export class AppComponent {
         }
       }
 
-      else if (this.min_stock != null && parseInt(product_quantity) >= this.minimum_stock && this.mini_price != null && this.maxi_price != null) {
+      else if (this.min_stock != null && parseInt(product_quantity) >= this.minimum_stock && this.mini_price !== '' && this.maxi_price !== '') {
         // This array contains strings that needs to be removed from main array
         console.log('if min stock and min max price');
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
@@ -1792,7 +1862,7 @@ export class AppComponent {
 
       }
 
-      else if (this.mini_price !== '' && this.maxi_price !== '' && this.min_stock != null) {
+      else if (this.mini_price !== '' && this.maxi_price !== '' && this.min_stock === '') {
         console.log('min max price');
 
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
@@ -1816,7 +1886,7 @@ export class AppComponent {
         }
       }
 
-      else if (this.mini_price === '' && this.maxi_price === '' && this.min_stock === '' && this.skucode === '' && this.profitmargin === '' && this.exchangedifference === '' && this.SBAtag === '' && this.discountedproduct === '' && this.requiringselectionproduct === '' && this.amazonprimeproduct === '') {
+      else if (this.mini_price === '' && this.maxi_price === '' && this.min_stock === '' && this.skucode === '' && this.profitmargin === '' && this.exchangedifference === '' && this.SBAtag === '' && this.discountedproduct === '' && this.requiringselectionproduct === '' && this.amazonprimeproduct === '' && this.cloudinventoryproduct === '' && this.criticalbrandedproduct === '') {
         console.log('all null ');
 
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
@@ -1869,4 +1939,21 @@ export class AppComponent {
   cancelDownload() {
     this.overlaypopup = !this.overlaypopup;
   }
+
+  edit() {
+    this.editbox = true;
+    // this.brandModal = this.modalService.open(this.edit_brand, {centered: true});
+  }
+
+  save() {
+    console.log(this.brandlist);
+    // this.brandModal.close();
+    this.editbox = false;
+
+
+  }
+  // handleWalletCancel() {
+  //   this.brandModal.close();
+  //   // this.walletAmount = {};
+  // }
 }
