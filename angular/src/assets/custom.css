@@ -47,8 +47,8 @@
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	/*----------*/
 	b{ font-weight:bold;}
-	
-	
+
+
 	/*----------*/
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
@@ -118,7 +118,7 @@ a:hover { text-decoration:underline; }
  min-height: 1px;
  padding-left: 15px;
  padding-right: 15px;
-} 
+}
 .col-12 { width: 100%; }
 .col-11 { width: 91.66666667%; }
 .col-10 { width: 83.33333333%; }
@@ -135,12 +135,12 @@ a:hover { text-decoration:underline; }
 @media (min-width: 768px) {
  .col-tab-12 { width: 100%; }
  .col-tab-11 { width: 91.66666667%; }
- .col-tab-10 { width: 83.33333333%; } 
- .col-tab-9 { width: 75%; } 
- .col-tab-8 { width: 66.66666667%; } 
+ .col-tab-10 { width: 83.33333333%; }
+ .col-tab-9 { width: 75%; }
+ .col-tab-8 { width: 66.66666667%; }
  .col-tab-7 { width: 58.33333333%; }
  .col-tab-6 { width: 50%; }
- .col-tab-5 { width: 41.66666667%; } 
+ .col-tab-5 { width: 41.66666667%; }
  .col-tab-4 { width: 33.33333333%; }
  .col-tab-3 { width: 25%; }
  .col-tab-2 { width: 16.66666667%; }

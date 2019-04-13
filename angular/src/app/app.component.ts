@@ -2,8 +2,12 @@ import {ApplicationRef, ChangeDetectorRef, Component, Inject, NgZone, ViewChild}
 import {TAB_ID} from './tab-id.injector';
 import {Angular5Csv} from "angular5-csv/dist/Angular5-csv";
 import {AppService} from "./app.service";
-// import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
-
+import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {HttpClient} from "@angular/common/http";
+// import { saveAs } from 'file-saver';
+import { saveAs } from 'file-saver';
+// import { FileSaver } from 'angular-file-saver';
+// var FileSaver = require('file-saver');
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +15,7 @@ import {AppService} from "./app.service";
 })
 // tslint:disable:variable-name
 export class AppComponent {
+
   readonly tabId = this._tabId;
   message: string;
   title = 'app';
@@ -22,6 +27,12 @@ export class AppComponent {
   minimum_stock: number;
   minimum_price: number;
   maximum_price: number;
+  public brands: any;
+  public products: any;
+  public product: any;
+  country_list: any;
+  countryData: any;
+  country: any;
   public trademaked_product: any;
   public trademakedproduct: any;
   public cloud_inventory_product: any;
@@ -62,15 +73,18 @@ export class AppComponent {
   product_brand: any = [];
   tabs: any = [];
   overlaypopup: boolean = false;
-  public brandlist: any = '';
+  public brandlist: any = [];
   editbox: boolean = false;
   buttonName: any = 'Search and Download';
-  // @ViewChild('edit_brand') edit_brand;
-  // public brandModal: NgbActiveModal;
+  @ViewChild('edit_brand') edit_brand;
+  public brandModal: NgbActiveModal;
 
   constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef,
-              public zone: NgZone, public  _appService: AppService) {
+              public zone: NgZone, public  _appService: AppService, private  modalService: NgbModal, private http: HttpClient) {
     // this._changeDetector.markForCheck();
+  }
+  ngOnInit() {
+    this.loadNavItems();
   }
 
   doSearchDownload(): void {
@@ -85,12 +99,43 @@ export class AppComponent {
           this.zone.run(() => {
             this.tabUrl = this.tabUrl;
             this.overlaypopup = true;
+            // this.changeAddress();
             this.processMainlist(this.tabUrl);
           });
         }
       }
     });
   }
+//   changeAddress() {
+//     console.log(this.country_list);
+//     this.country_list = this.country_list.split('', 2);
+//     console.log(this.country_list);
+//     console.log(this.country_list[0]);
+//     console.log(this.country_list[1]);
+// this.country_list = this.country_list[0] + this.country_list[1];
+//     // var country_name = this.country_list[0];
+//     this.country_list = this.country_list.toUpperCase();
+//     console.log(this.country_list);
+//
+//    this.countryData = {
+//       locationType: 'COUNTRY',
+//       district: this.country_list,
+//       countryCode: this.country_list,
+//      storeContext: 'kitchen-intl-ship',
+//      deviceType: 'web',
+//      pageType: 'Landing',
+//      actionSource: 'glow'
+//
+//     };
+//    // this.countryData = this.country.toArray();
+//    // console.log(this.countryData);
+//
+//
+// var change_add_url = 'https://www.amazon.com/gp/delivery/ajax/address-change.html';
+//     this._appService.changeAdd(this.countryData, change_add_url).subscribe((data) => {
+//       console.log(data);
+//     });
+//   }
 
   processMainlist(tabUrl): void {
 
@@ -134,7 +179,6 @@ export class AppComponent {
     }
   }
 
-
   getAsinDetail($asin, is_last) {
     let url = 'https://www.amazon.com/dp/';
     url = url + $asin;
@@ -176,6 +220,7 @@ export class AppComponent {
       this.cloudinventoryproduct = (this.cloud_inventory_product) ? (this.cloud_inventory_product) : '';
       this.criticalbrandedproduct = (this.critical_branded_product) ? (this.critical_branded_product) : '';
       this.SBAtag = (this.SBA_tag) ? (this.SBA_tag) : '';
+      this.product = (this.products) ? (this.products) : '';
       console.log(this.SBAtag);
       console.log(this.discountedproduct);
       console.log(this.requiringselectionproduct);
@@ -189,10 +234,45 @@ export class AppComponent {
       console.log(this.exchangedifference);
       console.log(this.cloudinventoryproduct);
       console.log(this.criticalbrandedproduct);
-
       console.log(this.trademakedproduct);
 
-      if (this.cloudinventoryproduct !== '') {
+      // if (this.trademakedproduct !== '') {
+      //   console.log('trademark product');
+      //   console.log(product_brand);
+      //   console.log(this.brandlist);
+      //  var url1 = 'https://developer.uspto.gov/ibd-api/v1/trademark/documents';
+      //   this._appService.gettrademark(url1).subscribe((response) => {
+      //     console.log('trade res');
+      //     console.log(response);
+      //     console.log('trade 1');
+      //
+      //   });
+      //
+      //
+      //   // if (productbrand !== true) {
+      //   //   console.log('var');
+      //   //   console.log(productbrand);
+      //   //
+      //   //   let _result = {
+      //   //     'Product Title': product_title,
+      //   //     'Price': product_price,
+      //   //     'Brand': product_brand,
+      //   //     'Quantity': product_quantity
+      //   //   };
+      //   //
+      //   //   this.productList = this.productList.concat(_result);
+      //   //   console.log(this.productList);
+      //   //   if (is_last === true) {
+      //   //     this.downloadCsv();
+      //   //   }
+      //   // }
+      // }
+      // if (this.country_list !== null) {
+      //   console.log(this.country_list);
+      //   console.log('country');
+      // }
+
+       if (this.cloudinventoryproduct !== '') {
         console.log('cloud inventory product');
         console.log(product_brand);
         console.log(this.brandlist);
@@ -222,7 +302,7 @@ export class AppComponent {
         }
       }
 
-      if (this.criticalbrandedproduct !== '') {
+     else if (this.criticalbrandedproduct !== '') {
         console.log('critical brand');
         console.log(product_brand);
         console.log(this.brandlist);
@@ -1922,14 +2002,23 @@ export class AppComponent {
     } else {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity'];
     }
-    new Angular5Csv(this.productList, 'My Report', {headers: (head)});
+    console.log(this.product);
+    if (this.product !== '') {
+      new Angular5Csv(this.productList, this.product, {headers: (head)});
+      this.overlaypopup = false;
+    } else {
+    new Angular5Csv(this.productList, 'My Reports', {headers: (head)});
     this.overlaypopup = false;
+    }
   }
 
 // getUpdateData(){
 //   this.asinList = this.asinList;
 //   this.asinNumber = this.asinNumber;
 // }
+
+
+
 
   refresh(): void {
     // this._applicationRef.tick();
@@ -1947,13 +2036,43 @@ export class AppComponent {
 
   save() {
     console.log(this.brandlist);
+
+    const blob = new Blob([this.brandlist], {type: 'text/plain;charset=utf-8'});
+    saveAs(blob, 'critical-brand.json');
+
+    // $http.post("http-post.json",{'id': id,'name': $scope.name})
+    //   .success(function(response) {
+    //     this.usersData = response.users;
+    //   });
     // this.brandModal.close();
     this.editbox = false;
 
+  }
+
+  loadNavItems() {
+    this.http.get("/assets/critical-brand.json").subscribe(response => {
+        console.log(response);
+      this.brands = response;
+
+      var k;
+        for (k = 0; k <  this.brands.length; k++) {
+          console.log(k);
+          var result =  this.brands[k].name;
+          // console.log(this.brandlist.name);
+          this.brandlist = this.brandlist.concat(result);
+          console.log( this.brandlist);
+          // var brandlist =  this.brands.replace(',', "\n");
+          // this.brandlist = this.brandlist.concat(brandlist);
+          // console.log(this.brandlist);
+
+        }
+
+    });
 
   }
-  // handleWalletCancel() {
-  //   this.brandModal.close();
-  //   // this.walletAmount = {};
-  // }
+
+  handleWalletCancel() {
+    this.brandModal.close();
+    // this.walletAmount = {};
+  }
 }

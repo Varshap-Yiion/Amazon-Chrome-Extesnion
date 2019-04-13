@@ -1,13 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Angular Chrome Extension",
-  "short_name": "Angular Chrome Extension",
+  "name": "Amazon Tool Chrome Extension",
+  "short_name": "Amazon Tool Chrome Extension",
   "version": "1.0.0",
-  "description": "Angular Chrome Extension scaffold project",
+  "description": "Amazon Tool Chrome Extension scaffold project",
   "permissions": ["tabs"],
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "Angular Chrome Extension"
+    "default_icon": "assets/icon.png",
+    "default_title": "Amazon Tool Chrome Extension"
   },
   "content_scripts": [
     {

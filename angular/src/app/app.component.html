@@ -3,7 +3,7 @@
 <div class="header">
 <nav class="pos-f-t ">
 <nav class="navbar navbar-dark bg-dark">
-<a class="navbar-brand" href="#"><img src="assets/amazon-logo.png"> Amazon Tool- PRO</a>
+<a class="navbar-brand" href="#"><img src="assets/amazon-logo.png"> Amazon Tool</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -29,8 +29,8 @@ aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="To
 </li>
 </ul>
 <div class="row">
-<div class="col-md-6">
-<div class="card card-box2 ">
+<div class="col-12">
+<div class="card card-box2">
 <h6 class="card-header label-title">Application Settings <img src="assets/youtube-logo.png"
 style="width: 20px;float:right;"></h6>
 <div class="card-body">
@@ -102,27 +102,27 @@ style="width: 20px;float:right;"></h6>
     </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-    <div class="tab-pane show active" id="p-search" role="tabpanel" aria-labelledby="p-search-tab">
+    <div class="tab-pane fade active" id="p-search" role="tabpanel" aria-labelledby="p-search-tab">
     <div class="card card-box1">
       <h6 class="card-header">Search Settings <img src="assets/youtube-logo.png" style="float:right;"></h6>
 
       <div class="card-body">
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12">
             <!-- Default unchecked -->
             <div class="custom-control custom-radio">
               <input type="radio" class="custom-control-input" id="radio1" name="defaultExampleRadios">
               <label class="custom-control-label label-title" for="radio1">Products on Amazon pages
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <p class="label-title">Number of pages</p><span class="inner-text">Min:1-2 Max:1-100 </span>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-6">
                     <input id="number" min="1" type="number" value="1" [(ngModel)]="from_page"
                            name="from_page_field" #from_page_field="ngModel" class="form-control"
                            style="width:35%;float: left;">
-                    <input class="form-control" id="number" max="1" [(ngModel)]="to_page" name="to_page_field"
+                    <input class="form-control" id="number" max="1"  [(ngModel)]="to_page" name="to_page_field"
                            #to_page_field="ngModel" type="number" value="50" style="width:35%;">
                   </div>
                 </div>
@@ -130,7 +130,7 @@ style="width: 20px;float:right;"></h6>
             </div>
           </div>
 
-          <!--<div class="col-md-6">-->
+          <!--<div class="col-12">-->
             <!--&lt;!&ndash; Default unchecked &ndash;&gt;-->
             <!--<div class="custom-control custom-radio">-->
               <!--<input type="radio" class="custom-control-input" id="radio2" name="defaultExampleRadios">-->
@@ -156,11 +156,11 @@ style="width: 20px;float:right;"></h6>
       <h6 class="card-header">Search Filter</h6>
       <div class="card-body">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12">
             <div class="inner-sec">
               <label class="label-title">Select Sotre Country</label>
-              <select class="browser-default custom-select">
-                <option selected>Please select</option>
+              <select class="browser-default custom-select" name="country" [(ngModel)]="country_list" #country="ngModel">
+                <option value="" selected="selected">Please select</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
@@ -281,7 +281,7 @@ style="width: 20px;float:right;"></h6>
                 <option value="Kyrgyzstan">Kyrgyzstan</option>
                 <option value="Lao">Lao People's Democratic Republic</option>
                 <option value="Latvia">Latvia</option>
-                <option value="Lebanon" selected>Lebanon</option>
+                <option value="Lebanon">Lebanon</option>
                 <option value="Lesotho">Lesotho</option>
                 <option value="Liberia">Liberia</option>
                 <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
@@ -406,17 +406,17 @@ style="width: 20px;float:right;"></h6>
             <hr>
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-9">
+                <div class="col-9">
                   <p class="label-title">Minimum Stock</p>
                   <span class="inner-text">We do not add products with low inventory </span>
                 </div>
-                <div class="col-md-3">
-                  <input id="number" min="1" type="number" value="20" [(ngModel)]="minimum_stock" name="minimum_stock_field"
+                <div class="col-3">
+                  <input id="number" min="1" type="number" placeholder="20" value="20" [(ngModel)]="minimum_stock" name="minimum_stock_field"
                          #minimum_stock_field="ngModel" class="form-control">
                 </div>
               </div>
             </div>
-
+<br/>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
               Use the Amazon filter to search for targeted focus note.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -436,13 +436,14 @@ style="width: 20px;float:right;"></h6>
                 <input type="checkbox" class="custom-control-input" id="checkbox3" [(ngModel)]="cloud_inventory_product" name="cloud_inventory_product_field"
                        #cloud_inventory_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox3">Products in the cloud
-                  inventory</label><button (click)="edit()">Edit</button>
+                  inventory</label><span (click)="edit()"><i class="glyphicon glyphicon-pencil"></i></span>
               </div>
+
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox4" [(ngModel)]="critical_branded_product" name="critical_branded_product_field"
                        #critical_branded_product_field="ngModel">
-                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label><button (click)="edit()">Edit</button>
-                <i class="icon-edit"></i>
+                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label> <span (click)="edit()"><i class="glyphicon glyphicon-pencil"></i></span>
+
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox5" [(ngModel)]="discounted_product" name="discounted_product_field"
@@ -492,19 +493,19 @@ style="width: 20px;float:right;"></h6>
       <h6 class="card-header">Pricing and inventory Code</h6>
       <div class="card-body">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12">
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="label-title">Profit Margin</p>
                   <span class="inner-text">Your per capita profit margin</span>
                 </div>
-                <div class="col-md-4">
+                <div class="col-4">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">%</span>
                     </div>
-                    <input id="number" min="1" type="number" value="25" [(ngModel)]="profit_margin" name="profit_margin_field"
+                    <input id="number" min="1" type="number" placeholder="25" value="25" [(ngModel)]="profit_margin" name="profit_margin_field"
                            #profit_margin_field="ngModel" class="form-control">
 
                   </div>
@@ -513,15 +514,15 @@ style="width: 20px;float:right;"></h6>
             </div>
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="label-title">Amazon Commision</p>
                   <span class="inner-text">Commision per sale </span></div>
-                <div class="col-md-4">
+                <div class="col-4">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">%</span>
                     </div>
-                    <input id="number" min="1" type="number" value="20" [(ngModel)]="amazon_commision" name="amazon_commision_field"
+                    <input id="number" min="1" type="number" placeholder="20" value="20" [(ngModel)]="amazon_commision" name="amazon_commision_field"
                            #amazon_commision_field="ngModel" class="form-control">
                   </div>
                 </div>
@@ -529,15 +530,15 @@ style="width: 20px;float:right;"></h6>
             </div>
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="label-title">Exchange rate difference</p>
                   <span class="inner-text">1 USD =  1.35 CAD</span></div>
-                <div class="col-md-4">
+                <div class="col-4">
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">$</span>
                     </div>
-                    <input id="number" min="1" type="number" value="1.35" [(ngModel)]="exchange_difference" name="exchange_difference_field"
+                    <input id="number" min="1" type="number" placeholder="1.35" value="1.35" [(ngModel)]="exchange_difference" name="exchange_difference_field"
                            #exchange_difference_field="ngModel" class="form-control">
                   </div>
                 </div>
@@ -546,12 +547,12 @@ style="width: 20px;float:right;"></h6>
             <hr>
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-8">
                   <p class="label-title">Stock code</p>
                   <span class="inner-text">STK1000, STK1001</span></div>
-                <div class="col-md-4">
+                <div class="col-4">
                   <div class="input-group mb-3">
-                    <input type="text" value="XTQE" [(ngModel)]="sku_code" name="sku_code_field"
+                    <input type="text" placeholder="AKS" value="XTQE" [(ngModel)]="sku_code" name="sku_code_field"
                            #sku_code_field="ngModel" class="form-control">
                   </div>
                 </div>
@@ -583,56 +584,24 @@ style="width: 20px;float:right;"></h6>
         </div>
 
 
-        <div class="row">
-          <div class="col-md-8">
-            <p class="label-title">Minimum Price</p>
-            <span class="inner-text">Decrease by maximum</span></div>
-          <div class="col-md-4">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">%</span>
-              </div>
-              <input id="number" min="1" type="number" value="1.5" [(ngModel)]="minimum_price" name="min_price"
-                     #min_price="ngModel" class="form-control">
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-md-8">
-            <p class="label-title">Maximum Price</p>
-            <span class="inner-text">Rise by maximum</span></div>
-          <div class="col-md-4">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">%</span>
-              </div>
-              <input id="number" min="1" type="number" value="1.5" [(ngModel)]="maximum_price" name="max_price"
-                     #max_price="ngModel" class="form-control">
-            </div>
-          </div>
-        </div>
-
-
 
         <!-- Card body -->
         <div id="collapseOne" aria-expanded="false" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
              data-parent="#accordionEx">
           <div class="card-body">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-12">
                 <div class="inner-sec">
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-8">
                       <p class="label-title">Minimum Price</p>
                       <span class="inner-text">Decrease by maximum</span></div>
-                    <div class="col-md-4">
+                    <div class="col-4">
                       <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">%</span>
                         </div>
-                        <input id="number" min="1" type="number" value="1.5" [(ngModel)]="minimum_price" name="min_price"
+                        <input id="number" min="1" type="number" placeholder="10" value="1.5" [(ngModel)]="minimum_price" name="min_price"
                                #min_price="ngModel" class="form-control">
                       </div>
                     </div>
@@ -640,15 +609,15 @@ style="width: 20px;float:right;"></h6>
                 </div>
                 <div class="inner-sec">
                   <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-8">
                       <p class="label-title">Maximum Price</p>
                       <span class="inner-text">Rise by maximum</span></div>
-                    <div class="col-md-4">
+                    <div class="col-4">
                       <div class="input-group mb-3">
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="basic-addon1">%</span>
                         </div>
-                        <input id="number" min="1" type="number" value="1.5" [(ngModel)]="maximum_price" name="max_price"
+                        <input id="number" min="1" type="number" placeholder="20" value="1.5" [(ngModel)]="maximum_price" name="max_price"
                                #max_price="ngModel" class="form-control">
                       </div>
                     </div>
@@ -686,13 +655,13 @@ style="width: 20px;float:right;"></h6>
              <!--data-parent="#accordionEx1">-->
           <!--<div class="card-body">-->
             <!--<div class="row">-->
-              <!--<div class="col-md-6">-->
+              <!--<div class="col-12">-->
                 <!--<div class="inner-sec">-->
                   <!--<div class="row">-->
-                    <!--<div class="col-md-8">-->
+                    <!--<div class="col-8">-->
                       <!--<p class="label-title">Price Difference</p>-->
                       <!--<span class="inner-text">Maximum price difference ratio</span></div>-->
-                    <!--<div class="col-md-4">-->
+                    <!--<div class="col-4">-->
                       <!--<div class="input-group mb-3">-->
                         <!--<div class="input-group-prepend">-->
                           <!--<span class="input-group-text" id="basic-addon1">%</span>-->
@@ -705,11 +674,11 @@ style="width: 20px;float:right;"></h6>
 
                 <!--<div class="inner-sec">-->
                   <!--<div class="row">-->
-                    <!--<div class="col-md-8">-->
+                    <!--<div class="col-8">-->
                       <!--<p class="label-title">Number of Vendors</p><span-->
                       <!--class="inner-text">Min-Max number of sellers</span>-->
                     <!--</div>-->
-                    <!--<div class="col-md-4">-->
+                    <!--<div class="col-4">-->
                       <!--<input id="number" min="0" type="number" value="0" class="form-control"-->
                              <!--style="width:50%;float: left;">-->
                       <!--<input class="form-control" id="number" max="5" type="number" value="5" style="width:50%;">-->
@@ -750,16 +719,17 @@ style="width: 20px;float:right;"></h6>
     <div class="card card-box6">
       <div class="card-body">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-12">
             <div class="inner-sec">
               <div class="row">
-                <div class="col-md-7">
+                <div class="col-7">
                   <p class="label-title">File name</p>
                   <span class="inner-text">Download in .csv and .txt</span>
                 </div>
-                <div class="col-md-5">
+                <div class="col-5">
                   <div class="input-group mb-3">
-                    <input name="products" type="text" value="products" class="form-control">
+                    <input name="products" type="text" placeholder="product" value="products" class="form-control" [(ngModel)]="products" name="product"
+                           #product="ngModel">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">.csv</span>
                     </div>
@@ -784,8 +754,8 @@ style="width: 20px;float:right;"></h6>
       </div>
     </div>
     </div>
-    <div class="tab-pane" id="p-update" role="tabpanel" aria-labelledby="p-update">...</div>
-    <!--<div class="tab-pane fade" id="p-home" role="tabpanel" aria-labelledby="p-home">...</div>-->
+    <div class="tab-pane fade" id="p-update" role="tabpanel" aria-labelledby="p-update">...</div>
+    <div class="tab-pane fade" id="p-home" role="tabpanel" aria-labelledby="p-home">testing...</div>
     </div>
   </div>
 
@@ -808,12 +778,49 @@ style="width: 20px;float:right;"></h6>
 </section>
 <!-- CONTAINER END -->
 
- <div *ngIf="editbox">
-   <div class="card border-light mb-3 card_brand_list"><div class="card-header" data-lang="txt0125">Critical Brand List</div>
-     <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
-       <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist"  #brand="ngModel"></textarea>
-       <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="save()">Save</button>
-     </div></div>
- </div>
+ <!--<ng-template #edit_brand let-c="close" let-d="dismiss" class="brand-popup">-->
+ <!--<div>-->
+   <!--<div class="card border-light mb-3 card_brand_list"><div class="card-header" data-lang="txt0125">Critical Brand List</div>-->
+     <!--<div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>-->
+       <!--<textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist"  #brand="ngModel"></textarea>-->
+       <!--<button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="save()">Save</button>-->
+     <!--</div></div>-->
+ <!--</div>-->
+ <!--</ng-template>-->
 
+ <!--<ng-template #edit_brand let-c="close" let-d="dismiss" class="brand-popup" style="opacity: 1;">-->
+   <!--<form (ngSubmit)="f.form.valid" #f="ngForm" novalidate class="form-horizontal letter-form" >-->
+     <!--<div class="modal-body">-->
+       <!--<h4 class="card-title">Critical Brand List</h4><br>-->
+       <!--<textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist" #brand="ngModel"></textarea>-->
+       <!--&lt;!&ndash;<span *ngIf="f.submitted && !password.valid" style="color: red">Required</span>&ndash;&gt;-->
+     <!--</div>-->
+     <!--<div class="modal-footer">-->
+       <!--<button class="btn btn-danger" (click)="handleWalletCancel()">Cancel</button>-->
+       <!--<button class="btn btn-primary" (click)="save()">Save</button>-->
+     <!--</div>-->
+   <!--</form>-->
+ <!--</ng-template>-->
+
+
+ <div *ngIf="editbox">
+   <div class="card border-light mb-3 card_brand_list">
+     <div class="card-brand-content">
+       <div class="card-header" data-lang="txt0125">Critical Brand List</div>
+       <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
+         <!--<ng-container *ngFor="let brand of brands">-->
+         <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist"  #brand="ngModel">
+           <!--<ng-template *ngFor="let brand of brands">-->
+           <!--<div *ngFor="let brand of brands">-->
+           <!--{{brand.name}}-->
+           <!--</div>-->
+           <!--</ng-template>-->
+           <!--</ng-template>-->
+       </textarea>
+         <!--</ng-container>-->
+         <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="save()">Save</button>
+       </div></div>
+     </div>
+
+ </div>
 

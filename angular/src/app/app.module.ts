@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AppService} from "./app.service";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import {AppService} from "./app.service";
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    NgbModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
