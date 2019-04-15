@@ -23,11 +23,10 @@ export class AppService {
     return this._http.get(url, {responseType: 'text'});
   }
 
-  changeAdd(countryData: string, changeAddUrl): Observable<any> {
-    // let dailyreportjsondata = JSON.stringify(countryData);
-    // let locationDataBody = `country_data=${dailyreportjsondata}`;
+  changeAdd(locationType: string, district: string, countryCode: string, changeAddUrl): Observable<any> {
+    let countryBody = `locationType=${locationType}&district=${district}&countryCode=${countryCode}`;
     let headers = new HttpHeaders({'Content-Type': 'application/x-www-form-urlencoded'});
-    return this._http.post(changeAddUrl, countryData,  {headers: headers });
+    return this._http.post(changeAddUrl, countryBody,  {headers: headers });
   }
 
 }

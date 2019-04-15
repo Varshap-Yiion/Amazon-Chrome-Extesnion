@@ -159,9 +159,12 @@ style="width: 20px;float:right;"></h6>
           <div class="col-12">
             <div class="inner-sec">
               <label class="label-title">Select Sotre Country</label>
-              <select class="browser-default custom-select" name="country" [(ngModel)]="country_list" #country="ngModel">
-                <option value="" selected="selected">Please select</option>
+              <select class="browser-default custom-select" name="country" ng-options="value" [(ngModel)]="country.country_list" #country="ngModel">
+                <!--<option value="" selected="selected">Please select</option>-->
+                <!--<option *ngFor="let country of isoCountries" value="{{country.id}}">{{country.name}}</option>-->
+
                 <option value="Afghanistan">Afghanistan</option>
+                <option value="Aland Islands">Aland Islands</option>
                 <option value="Albania">Albania</option>
                 <option value="Algeria">Algeria</option>
                 <option value="American Samoa">American Samoa</option>
@@ -230,7 +233,7 @@ style="width: 20px;float:right;"></h6>
                 <option value="Eritrea">Eritrea</option>
                 <option value="Estonia">Estonia</option>
                 <option value="Ethiopia">Ethiopia</option>
-                <option value="Falkland Islands">Falkland Islands (Malvinas)</option>
+                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
                 <option value="Faroe Islands">Faroe Islands</option>
                 <option value="Fiji">Fiji</option>
                 <option value="Finland">Finland</option>
@@ -266,16 +269,16 @@ style="width: 20px;float:right;"></h6>
                 <option value="Iran">Iran (Islamic Republic of)</option>
                 <option value="Iraq">Iraq</option>
                 <option value="Ireland">Ireland</option>
+                <option value="Isle Of Man">Isle Of Man</option>
                 <option value="Israel">Israel</option>
                 <option value="Italy">Italy</option>
                 <option value="Jamaica">Jamaica</option>
                 <option value="Japan">Japan</option>
+                <option value="Jersey">Jersey</option>
                 <option value="Jordan">Jordan</option>
                 <option value="Kazakhstan">Kazakhstan</option>
                 <option value="Kenya">Kenya</option>
                 <option value="Kiribati">Kiribati</option>
-                <option value="Democratic People's Republic of Korea">Korea, Democratic People's Republic of
-                </option>
                 <option value="Korea">Korea, Republic of</option>
                 <option value="Kuwait">Kuwait</option>
                 <option value="Kyrgyzstan">Kyrgyzstan</option>
@@ -288,7 +291,7 @@ style="width: 20px;float:right;"></h6>
                 <option value="Liechtenstein">Liechtenstein</option>
                 <option value="Lithuania">Lithuania</option>
                 <option value="Luxembourg">Luxembourg</option>
-                <option value="Macau">Macau</option>
+                <option value="Macao">Macao</option>
                 <option value="Macedonia">Macedonia, The Former Yugoslav Republic of</option>
                 <option value="Madagascar">Madagascar</option>
                 <option value="Malawi">Malawi</option>
@@ -327,6 +330,7 @@ style="width: 20px;float:right;"></h6>
                 <option value="Oman">Oman</option>
                 <option value="Pakistan">Pakistan</option>
                 <option value="Palau">Palau</option>
+                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
                 <option value="Panama">Panama</option>
                 <option value="Papua New Guinea">Papua New Guinea</option>
                 <option value="Paraguay">Paraguay</option>
@@ -339,18 +343,23 @@ style="width: 20px;float:right;"></h6>
                 <option value="Qatar">Qatar</option>
                 <option value="Reunion">Reunion</option>
                 <option value="Romania">Romania</option>
-                <option value="Russia">Russian Federation</option>
+                <option value="Russian Federation">Russian Federation</option>
                 <option value="Rwanda">Rwanda</option>
+                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                <option value="Saint Helena">Saint Helena</option>
                 <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                <option value="Saint LUCIA">Saint LUCIA</option>
-                <option value="Saint Vincent">Saint Vincent and the Grenadines</option>
+                <option value="Saint Lucia">Saint LUCIA</option>
+                <option value="Saint Martin">Saint Martin</option>
+                <option value="Saint Pierre And Miquelon">Saint Pierre And Miquelon</option>
+                <option value="Saint Vincent And Grenadines">Saint Vincent and the Grenadines</option>
                 <option value="Samoa">Samoa</option>
                 <option value="San Marino">San Marino</option>
                 <option value="Sao Tome and Principe">Sao Tome and Principe</option>
                 <option value="Saudi Arabia">Saudi Arabia</option>
                 <option value="Senegal">Senegal</option>
+                <option value="Serbia">Serbia</option>
                 <option value="Seychelles">Seychelles</option>
-                <option value="Sierra">Sierra Leone</option>
+                <option value="Sierra Leone">Sierra Leone</option>
                 <option value="Singapore">Singapore</option>
                 <option value="Slovakia">Slovakia (Slovak Republic)</option>
                 <option value="Slovenia">Slovenia</option>
@@ -358,21 +367,20 @@ style="width: 20px;float:right;"></h6>
                 <option value="Somalia">Somalia</option>
                 <option value="South Africa">South Africa</option>
                 <option value="South Georgia">South Georgia and the South Sandwich Islands</option>
-                <option value="Span">Spain</option>
+                <option value="Spain">Spain</option>
                 <option value="SriLanka">Sri Lanka</option>
-                <option value="St. Helena">St. Helena</option>
-                <option value="St. Pierre and Miguelon">St. Pierre and Miquelon</option>
                 <option value="Sudan">Sudan</option>
                 <option value="Suriname">Suriname</option>
-                <option value="Svalbard">Svalbard and Jan Mayen Islands</option>
+                <option value="Svalbard And Jan Mayen">Svalbard and Jan Mayen Islands</option>
                 <option value="Swaziland">Swaziland</option>
                 <option value="Sweden">Sweden</option>
                 <option value="Switzerland">Switzerland</option>
-                <option value="Syria">Syrian Arab Republic</option>
+                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
                 <option value="Taiwan">Taiwan, Province of China</option>
                 <option value="Tajikistan">Tajikistan</option>
                 <option value="Tanzania">Tanzania, United Republic of</option>
                 <option value="Thailand">Thailand</option>
+                <option value="Timor-Leste">Timor-Leste</option>
                 <option value="Togo">Togo</option>
                 <option value="Tokelau">Tokelau</option>
                 <option value="Tonga">Tonga</option>
@@ -380,14 +388,14 @@ style="width: 20px;float:right;"></h6>
                 <option value="Tunisia">Tunisia</option>
                 <option value="Turkey">Turkey</option>
                 <option value="Turkmenistan">Turkmenistan</option>
-                <option value="Turks and Caicos">Turks and Caicos Islands</option>
+                <option value="Turks And Caicos Islands">Turks and Caicos Islands</option>
                 <option value="Tuvalu">Tuvalu</option>
                 <option value="Uganda">Uganda</option>
                 <option value="Ukraine">Ukraine</option>
                 <option value="United Arab Emirates">United Arab Emirates</option>
                 <option value="United Kingdom">United Kingdom</option>
-                <option value="United States">United States</option>
-                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                <option value="United States" [selected]="selected">United States</option>
+                <option value="United States Outlying Islands">United States Minor Outlying Islands</option>
                 <option value="Uruguay">Uruguay</option>
                 <option value="Uzbekistan">Uzbekistan</option>
                 <option value="Vanuatu">Vanuatu</option>
@@ -398,7 +406,6 @@ style="width: 20px;float:right;"></h6>
                 <option value="Wallis and Futana Islands">Wallis and Futuna Islands</option>
                 <option value="Western Sahara">Western Sahara</option>
                 <option value="Yemen">Yemen</option>
-                <option value="Yugoslavia">Yugoslavia</option>
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
               </select>
@@ -427,22 +434,22 @@ style="width: 20px;float:right;"></h6>
               <label class="label-title">Unlist Options</label>
 
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="checkbox2" [(ngModel)]="trademaked_product" name="trademaked_product_field"
-                       #trademaked_product_field="ngModel">
+                <input type="checkbox" class="custom-control-input" id="checkbox2" [(ngModel)]="trademarked_product" name="trademarked_product_field"
+                       #trademarked_product_field="ngModel">
 
-                <label class="custom-control-label label-title" for="checkbox2">Trademarked products</label>
+                <label class="custom-control-label label-title" for="checkbox2">Trademarked products</label> <span (click)="editTrademark()"><i class="glyphicon glyphicon-pencil"></i></span>
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox3" [(ngModel)]="cloud_inventory_product" name="cloud_inventory_product_field"
                        #cloud_inventory_product_field="ngModel">
                 <label class="custom-control-label label-title" for="checkbox3">Products in the cloud
-                  inventory</label><span (click)="edit()"><i class="glyphicon glyphicon-pencil"></i></span>
+                  inventory</label><span (click)="editCloudInventory()"><i class="glyphicon glyphicon-pencil"></i></span>
               </div>
 
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox4" [(ngModel)]="critical_branded_product" name="critical_branded_product_field"
                        #critical_branded_product_field="ngModel">
-                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label> <span (click)="edit()"><i class="glyphicon glyphicon-pencil"></i></span>
+                <label class="custom-control-label label-title" for="checkbox4">Critical Branded product</label> <span (click)="editCriticalBrand()"><i class="glyphicon glyphicon-pencil"></i></span>
 
               </div>
               <div class="custom-control custom-checkbox">
@@ -803,24 +810,39 @@ style="width: 20px;float:right;"></h6>
  <!--</ng-template>-->
 
 
- <div *ngIf="editbox">
+ <div *ngIf="edittrademarkbox">
+   <div class="card border-light mb-3 card_brand_list">
+     <div class="card-brand-content">
+       <div class="card-header" data-lang="txt0125">TradeMark List</div>
+       <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
+         <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="trademark" [(ngModel)]="trademarklist"  #trademark="ngModel">
+       </textarea>
+         <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="savetrademark()">Save</button>
+       </div></div>
+     </div>
+ </div>
+
+ <div *ngIf="editcloudinventorybox">
+   <div class="card border-light mb-3 card_brand_list">
+     <div class="card-brand-content">
+       <div class="card-header" data-lang="txt0125">Cloud Inventroy List</div>
+       <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
+         <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="cloudinventroy" [(ngModel)]="cloudinventroylist"  #cloudinventroy="ngModel">
+       </textarea>
+         <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="savecloudinventory()">Save</button>
+       </div></div>
+   </div>
+ </div>
+
+ <div *ngIf="editcriticalbrandbox">
    <div class="card border-light mb-3 card_brand_list">
      <div class="card-brand-content">
        <div class="card-header" data-lang="txt0125">Critical Brand List</div>
        <div class="card-body"><p class="text-muted" data-lang="txt0126">By pressing Enter you can add a different brand for each line</p>
-         <!--<ng-container *ngFor="let brand of brands">-->
-         <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="brand" [(ngModel)]="brandlist"  #brand="ngModel">
-           <!--<ng-template *ngFor="let brand of brands">-->
-           <!--<div *ngFor="let brand of brands">-->
-           <!--{{brand.name}}-->
-           <!--</div>-->
-           <!--</ng-template>-->
-           <!--</ng-template>-->
+         <textarea class="form-control mb-3" id="my_critical_brand_list" spellcheck="false" name="criticalbrand" [(ngModel)]="criticalbrandlist"  #criticalbrand="ngModel">
        </textarea>
-         <!--</ng-container>-->
-         <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="save()">Save</button>
+         <button id="my_critical_brand_list_save" type="button" class="btn btn-info" data-lang="txt0127" (click)="savecriticalbrand()">Save</button>
        </div></div>
-     </div>
-
+   </div>
  </div>
 
