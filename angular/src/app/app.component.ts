@@ -80,1229 +80,1229 @@ export class AppComponent {
 
 
   public isoCountries = [{
-    "id": 1,
-    "code": "af",
-    "name": "Afghanistan"
+    id: 1,
+    code: "af",
+    name: "Afghanistan"
   },
     {
-      "id": 2,
-      "code": "ax",
-      "name": "Aland Islands"
+      id: 2,
+      code: "ax",
+      name: "Aland Islands"
     },
     {
-      "id": 3,
-      "code": "al",
-      "name": "Albania"
+      id: 3,
+      code: "al",
+      name: "Albania"
     },
     {
-      "id": 4,
-      "code": "dz",
-      "name": "Algeria"
+      id: 4,
+      code: "dz",
+      name: "Algeria"
     },
     {
-      "id": 5,
-      "code": "as",
-      "name": "American Samoa"
+      id: 5,
+      code: "as",
+      name: "American Samoa"
     },
     {
-      "id": 6,
-      "code": "ad",
-      "name": "Andorra"
+      id: 6,
+      code: "ad",
+      name: "Andorra"
     },
     {
-      "id": 7,
-      "code": "ao",
-      "name": "Angola"
+      id: 7,
+      code: "ao",
+      name: "Angola"
     },
     {
-      "id": 8,
-      "code": "ai",
-      "name": "Anguilla"
+      id: 8,
+      code: "ai",
+      name: "Anguilla"
     },
     {
-      "id": 9,
-      "code": "aq",
-      "name": "Antarctica"
+      id: 9,
+      code: "aq",
+      name: "Antarctica"
     },
     {
-      "id": 10,
-      "code": "ag",
-      "name": "Antigua and Barbuda"
+      id: 10,
+      code: "ag",
+      name: "Antigua and Barbuda"
     },
     {
-      "id": 11,
-      "code": "ar",
-      "name": "Argentina"
+      id: 11,
+      code: "ar",
+      name: "Argentina"
     },
     {
-      "id": 12,
-      "code": "am",
-      "name": "Armenia"
+      id: 12,
+      code: "am",
+      name: "Armenia"
     },
     {
-      "id": 13,
-      "code": "aw",
-      "name": "Aruba"
+      id: 13,
+      code: "aw",
+      name: "Aruba"
     },
     {
-      "id": 14,
-      "code": "au",
-      "name": "Australia"
+      id: 14,
+      code: "au",
+      name: "Australia"
     },
     {
-      "id": 15,
-      "code": "at",
-      "name": "Austria"
+      id: 15,
+      code: "at",
+      name: "Austria"
     },
     {
-      "id": 16,
-      "code": "az",
-      "name": "Azerbaijan"
+      id: 16,
+      code: "az",
+      name: "Azerbaijan"
     },
     {
-      "id": 17,
-      "code": "bs",
-      "name": "Bahamas"
+      id: 17,
+      code: "bs",
+      name: "Bahamas"
     },
     {
-      "id": 18,
-      "code": "bh",
-      "name": "Bahrain"
+      id: 18,
+      code: "bh",
+      name: "Bahrain"
     },
     {
-      "id": 19,
-      "code": "bd",
-      "name": "Bangladesh"
+      id: 19,
+      code: "bd",
+      name: "Bangladesh"
     },
     {
-      "id": 20,
-      "code": "bb",
-      "name": "Barbados"
+      id: 20,
+      code: "bb",
+      name: "Barbados"
     },
     {
-      "id": 21,
-      "code": "by",
-      "name": "Belarus"
+      id: 21,
+      code: "by",
+      name: "Belarus"
     },
     {
-      "id": 22,
-      "code": "be",
-      "name": "Belgium"
+      id: 22,
+      code: "be",
+      name: "Belgium"
     },
     {
-      "id": 23,
-      "code": "bz",
-      "name": "Belize"
+      id: 23,
+      code: "bz",
+      name: "Belize"
     },
     {
-      "id": 24,
-      "code": "bj",
-      "name": "Benin"
+      id: 24,
+      code: "bj",
+      name: "Benin"
     },
     {
-      "id": 25,
-      "code": "bm",
-      "name": "Bermuda"
+      id: 25,
+      code: "bm",
+      name: "Bermuda"
     },
     {
-      "id": 26,
-      "code": "bt",
-      "name": "Bhutan"
+      id: 26,
+      code: "bt",
+      name: "Bhutan"
     },
     {
-      "id": 27,
-      "code": "bo",
-      "name": "Bolivia"
+      id: 27,
+      code: "bo",
+      name: "Bolivia"
     },
     {
-      "id": 28,
-      "code": "ba",
-      "name": "Bosnia and Herzegovina"
+      id: 28,
+      code: "ba",
+      name: "Bosnia and Herzegovina"
     },
     {
-      "id": 29,
-      "code": "bw",
-      "name": "Botswana"
+      id: 29,
+      code: "bw",
+      name: "Botswana"
     },
     {
-      "id": 30,
-      "code": "bv",
-      "name": "Bouvet Island"
+      id: 30,
+      code: "bv",
+      name: "Bouvet Island"
     },
     {
-      "id": 31,
-      "code": "br",
-      "name": "Brazil"
+      id: 31,
+      code: "br",
+      name: "Brazil"
     },
     {
-      "id": 32,
-      "code": "io",
-      "name": "British Indian Ocean Territory"
+      id: 32,
+      code: "io",
+      name: "British Indian Ocean Territory"
     },
     {
-      "id": 33,
-      "code": "bn",
-      "name": "Brunei Darussalam"
+      id: 33,
+      code: "bn",
+      name: "Brunei Darussalam"
     },
     {
-      "id": 34,
-      "code": "bg",
-      "name": "Bulgaria"
+      id: 34,
+      code: "bg",
+      name: "Bulgaria"
     },
     {
-      "id": 35,
-      "code": "bf",
-      "name": "Burkina Faso"
+      id: 35,
+      code: "bf",
+      name: "Burkina Faso"
     },
     {
-      "id": 36,
-      "code": "bi",
-      "name": "Burundi"
+      id: 36,
+      code: "bi",
+      name: "Burundi"
     },
     {
-      "id": 37,
-      "code": "kh",
-      "name": "Cambodia"
+      id: 37,
+      code: "kh",
+      name: "Cambodia"
     },
     {
-      "id": 38,
-      "code": "cm",
-      "name": "Cameroon"
+      id: 38,
+      code: "cm",
+      name: "Cameroon"
     },
     {
-      "id": 39,
-      "code": "ca",
-      "name": "Canada"
+      id: 39,
+      code: "ca",
+      name: "Canada"
     },
     {
-      "id": 40,
-      "code": "cv",
-      "name": "Cape Verde"
+      id: 40,
+      code: "cv",
+      name: "Cape Verde"
     },
     {
-      "id": 41,
-      "code": "ky",
-      "name": "Cayman Islands"
+      id: 41,
+      code: "ky",
+      name: "Cayman Islands"
     },
     {
-      "id": 42,
-      "code": "cf",
-      "name": "Central African Republic"
+      id: 42,
+      code: "cf",
+      name: "Central African Republic"
     },
     {
-      "id": 43,
-      "code": "td",
-      "name": "Chad"
+      id: 43,
+      code: "td",
+      name: "Chad"
     },
     {
-      "id": 44,
-      "code": "cl",
-      "name": "Chile"
+      id: 44,
+      code: "cl",
+      name: "Chile"
     },
     {
-      "id": 45,
-      "code": "cn",
-      "name": "China"
+      id: 45,
+      code: "cn",
+      name: "China"
     },
     {
-      "id": 46,
-      "code": "cx",
-      "name": "Christmas Island"
+      id: 46,
+      code: "cx",
+      name: "Christmas Island"
     },
     {
-      "id": 47,
-      "code": "cc",
-      "name": "Cocos (Keeling) Islands"
+      id: 47,
+      code: "cc",
+      name: "Cocos (Keeling) Islands"
     },
     {
-      "id": 48,
-      "code": "co",
-      "name": "Colombia"
+      id: 48,
+      code: "co",
+      name: "Colombia"
     },
     {
-      "id": 49,
-      "code": "km",
-      "name": "Comoros"
+      id: 49,
+      code: "km",
+      name: "Comoros"
     },
     {
-      "id": 50,
-      "code": "cg",
-      "name": "Congo"
+      id: 50,
+      code: "cg",
+      name: "Congo"
     },
     {
-      "id": 51,
-      "code": "cd",
-      "name": "Congo, Democratic Republic"
+      id: 51,
+      code: "cd",
+      name: "Congo, Democratic Republic"
     },
     {
-      "id": 52,
-      "code": "ck",
-      "name": "Cook Islands"
+      id: 52,
+      code: "ck",
+      name: "Cook Islands"
     },
     {
-      "id": 53,
-      "code": "cr",
-      "name": "Costa Rica"
+      id: 53,
+      code: "cr",
+      name: "Costa Rica"
     },
     {
-      "id": 54,
-      "code": "ci",
-      "name": "Cote D'Ivoire"
+      id: 54,
+      code: "ci",
+      name: "Cote D'Ivoire"
     },
     {
-      "id": 55,
-      "code": "hr",
-      "name": "Croatia"
+      id: 55,
+      code: "hr",
+      name: "Croatia"
     },
     {
-      "id": 56,
-      "code": "cu",
-      "name": "Cuba"
+      id: 56,
+      code: "cu",
+      name: "Cuba"
     },
     {
-      "id": 57,
-      "code": "cy",
-      "name": "Cyprus"
+      id: 57,
+      code: "cy",
+      name: "Cyprus"
     },
     {
-      "id": 58,
-      "code": "cz",
-      "name": "Czech Republic"
+      id: 58,
+      code: "cz",
+      name: "Czech Republic"
     },
     {
-      "id": 59,
-      "code": "dk",
-      "name": "Denmark"
+      id: 59,
+      code: "dk",
+      name: "Denmark"
     },
     {
-      "id": 60,
-      "code": "dj",
-      "name": "Djibouti"
+      id: 60,
+      code: "dj",
+      name: "Djibouti"
     },
     {
-      "id": 61,
-      "code": "dm",
-      "name": "Dominica"
+      id: 61,
+      code: "dm",
+      name: "Dominica"
     },
     {
-      "id": 62,
-      "code": "do",
-      "name": "Dominican Republic"
+      id: 62,
+      code: "do",
+      name: "Dominican Republic"
     },
     {
-      "id": 63,
-      "code": "ec",
-      "name": "Ecuador"
+      id: 63,
+      code: "ec",
+      name: "Ecuador"
     },
     {
-      "id": 64,
-      "code": "eg",
-      "name": "Egypt"
+      id: 64,
+      code: "eg",
+      name: "Egypt"
     },
     {
-      "id": 65,
-      "code": "sv",
-      "name": "El Salvador"
+      id: 65,
+      code: "sv",
+      name: "El Salvador"
     },
     {
-      "id": 66,
-      "code": "gq",
-      "name": "Equatorial Guinea"
+      id: 66,
+      code: "gq",
+      name: "Equatorial Guinea"
     },
     {
-      "id": 67,
-      "code": "er",
-      "name": "Eritrea"
+      id: 67,
+      code: "er",
+      name: "Eritrea"
     },
     {
-      "id": 68,
-      "code": "ee",
-      "name": "Estonia"
+      id: 68,
+      code: "ee",
+      name: "Estonia"
     },
     {
-      "id": 69,
-      "code": "et",
-      "name": "Ethiopia"
+      id: 69,
+      code: "et",
+      name: "Ethiopia"
     },
     {
-      "id": 70,
-      "code": "fk",
-      "name": "Falkland Islands (Malvinas)"
+      id: 70,
+      code: "fk",
+      name: "Falkland Islands (Malvinas)"
     },
     {
-      "id": 71,
-      "code": "fo",
-      "name": "Faroe Islands"
+      id: 71,
+      code: "fo",
+      name: "Faroe Islands"
     },
     {
-      "id": 72,
-      "code": "fj",
-      "name": "Fiji"
+      id: 72,
+      code: "fj",
+      name: "Fiji"
     },
     {
-      "id": 73,
-      "code": "fi",
-      "name": "Finland"
+      id: 73,
+      code: "fi",
+      name: "Finland"
     },
     {
-      "id": 74,
-      "code": "fr",
-      "name": "France"
+      id: 74,
+      code: "fr",
+      name: "France"
     },
     {
-      "id": 75,
-      "code": "gf",
-      "name": "French Guiana"
+      id: 75,
+      code: "gf",
+      name: "French Guiana"
     },
     {
-      "id": 76,
-      "code": "pf",
-      "name": "French Polynesia"
+      id: 76,
+      code: "pf",
+      name: "French Polynesia"
     },
     {
-      "id": 77,
-      "code": "tf",
-      "name": "French Southern Territories"
+      id: 77,
+      code: "tf",
+      name: "French Southern Territories"
     },
     {
-      "id": 78,
-      "code": "ga",
-      "name": "Gabon"
+      id: 78,
+      code: "ga",
+      name: "Gabon"
     },
     {
-      "id": 79,
-      "code": "gm",
-      "name": "Gambia"
+      id: 79,
+      code: "gm",
+      name: "Gambia"
     },
     {
-      "id": 80,
-      "code": "ge",
-      "name": "Georgia"
+      id: 80,
+      code: "ge",
+      name: "Georgia"
     },
     {
-      "id": 81,
-      "code": "de",
-      "name": "Germany"
+      id: 81,
+      code: "de",
+      name: "Germany"
     },
     {
-      "id": 82,
-      "code": "gh",
-      "name": "Ghana"
+      id: 82,
+      code: "gh",
+      name: "Ghana"
     },
     {
-      "id": 83,
-      "code": "gi",
-      "name": "Gibraltar"
+      id: 83,
+      code: "gi",
+      name: "Gibraltar"
     },
     {
-      "id": 84,
-      "code": "gr",
-      "name": "Greece"
+      id: 84,
+      code: "gr",
+      name: "Greece"
     },
     {
-      "id": 85,
-      "code": "gl",
-      "name": "Greenland"
+      id: 85,
+      code: "gl",
+      name: "Greenland"
     },
     {
-      "id": 86,
-      "code": "gd",
-      "name": "Grenada"
+      id: 86,
+      code: "gd",
+      name: "Grenada"
     },
     {
-      "id": 87,
-      "code": "gp",
-      "name": "Guadeloupe"
+      id: 87,
+      code: "gp",
+      name: "Guadeloupe"
     },
     {
-      "id": 88,
-      "code": "gu",
-      "name": "Guam"
+      id: 88,
+      code: "gu",
+      name: "Guam"
     },
     {
-      "id": 89,
-      "code": "gt",
-      "name": "Guatemala"
+      id: 89,
+      code: "gt",
+      name: "Guatemala"
     },
     {
-      "id": 90,
-      "code": "gg",
-      "name": "Guernsey"
+      id: 90,
+      code: "gg",
+      name: "Guernsey"
     },
     {
-      "id": 91,
-      "code": "gn",
-      "name": "Guinea"
+      id: 91,
+      code: "gn",
+      name: "Guinea"
     },
     {
-      "id": 92,
-      "code": "gw",
-      "name": "Guinea-Bissau"
+      id: 92,
+      code: "gw",
+      name: "Guinea-Bissau"
     },
     {
-      "id": 93,
-      "code": "gy",
-      "name": "Guyana"
+      id: 93,
+      code: "gy",
+      name: "Guyana"
     },
     {
-      "id": 94,
-      "code": "ht",
-      "name": "Haiti"
+      id: 94,
+      code: "ht",
+      name: "Haiti"
     },
     {
-      "id": 95,
-      "code": "hm",
-      "name": "Heard and McDonald Islands"
+      id: 95,
+      code: "hm",
+      name: "Heard and McDonald Islands"
     },
     {
-      "id": 96,
-      "code": "va",
-      "name": "Holy See"
+      id: 96,
+      code: "va",
+      name: "Holy See"
     },
     {
-      "id": 97,
-      "code": "hn",
-      "name": "Honduras"
+      id: 97,
+      code: "hn",
+      name: "Honduras"
     },
     {
-      "id": 98,
-      "code": "hk",
-      "name": "Hong Kong"
+      id: 98,
+      code: "hk",
+      name: "Hong Kong"
     },
     {
-      "id": 99,
-      "code": "hu",
-      "name": "Hungary"
+      id: 99,
+      code: "hu",
+      name: "Hungary"
     },
     {
-      "id": 100,
-      "code": "is",
-      "name": "Iceland"
+      id: 100,
+      code: "is",
+      name: "Iceland"
     },
     {
-      "id": 101,
-      "code": "in",
-      "name": "India"
+      id: 101,
+      code: "in",
+      name: "India"
     },
     {
-      "id": 102,
-      "code": "id",
-      "name": "Indonesia"
+      id: 102,
+      code: "id",
+      name: "Indonesia"
     },
     {
-      "id": 103,
-      "code": "ir",
-      "name": "Iran"
+      id: 103,
+      code: "ir",
+      name: "Iran"
     },
     {
-      "id": 104,
-      "code": "iq",
-      "name": "Iraq"
+      id: 104,
+      code: "iq",
+      name: "Iraq"
     },
     {
-      "id": 105,
-      "code": "ie",
-      "name": "Ireland"
+      id: 105,
+      code: "ie",
+      name: "Ireland"
     },
     {
-      "id": 106,
-      "code": "im",
-      "name": "Isle Of Man"
+      id: 106,
+      code: "im",
+      name: "Isle Of Man"
     },
     {
-      "id": 107,
-      "code": "il",
-      "name": "Israel"
+      id: 107,
+      code: "il",
+      name: "Israel"
     },
     {
-      "id": 108,
-      "code": "it",
-      "name": "Italy"
+      id: 108,
+      code: "it",
+      name: "Italy"
     },
     {
-      "id": 109,
-      "code": "jm",
-      "name": "Jamaica"
+      id: 109,
+      code: "jm",
+      name: "Jamaica"
     },
     {
-      "id": 110,
-      "code": "jp",
-      "name": "Japan"
+      id: 110,
+      code: "jp",
+      name: "Japan"
     },
     {
-      "id": 111,
-      "code": "je",
-      "name": "Jersey"
+      id: 111,
+      code: "je",
+      name: "Jersey"
     },
     {
-      "id": 112,
-      "code": "jo",
-      "name": "Jordan"
+      id: 112,
+      code: "jo",
+      name: "Jordan"
     },
     {
-      "id": 113,
-      "code": "kz",
-      "name": "Kazakhstan"
+      id: 113,
+      code: "kz",
+      name: "Kazakhstan"
     },
     {
-      "id": 114,
-      "code": "ke",
-      "name": "Kenya"
+      id: 114,
+      code: "ke",
+      name: "Kenya"
     },
     {
-      "id": 115,
-      "code": "ki",
-      "name": "Kiribati"
+      id: 115,
+      code: "ki",
+      name: "Kiribati"
     },
     {
-      "id": 116,
-      "code": "kr",
-      "name": "Korea"
+      id: 116,
+      code: "kr",
+      name: "Korea"
     },
     {
-      "id": 117,
-      "code": "kw",
-      "name": "Kuwait"
+      id: 117,
+      code: "kw",
+      name: "Kuwait"
     },
     {
-      "id": 118,
-      "code": "kg",
-      "name": "Kyrgyzstan"
+      id: 118,
+      code: "kg",
+      name: "Kyrgyzstan"
     },
     {
-      "id": 119,
-      "code": "la",
-      "name": "Lao People's Democratic Republic"
+      id: 119,
+      code: "la",
+      name: "Lao People's Democratic Republic"
     },
     {
-      "id": 120,
-      "code": "lv",
-      "name": "Latvia"
+      id: 120,
+      code: "lv",
+      name: "Latvia"
     },
     {
-      "id": 121,
-      "code": "lb",
-      "name": "Lebanon"
+      id: 121,
+      code: "lb",
+      name: "Lebanon"
     },
     {
-      "id": 122,
-      "code": "ls",
-      "name": "Lesotho"
+      id: 122,
+      code: "ls",
+      name: "Lesotho"
     },
     {
-      "id": 123,
-      "code": "lr",
-      "name": "Liberia"
+      id: 123,
+      code: "lr",
+      name: "Liberia"
     },
     {
-      "id": 124,
-      "code": "ly",
-      "name": "Libyan Arab Jamahiriya"
+      id: 124,
+      code: "ly",
+      name: "Libyan Arab Jamahiriya"
     },
     {
-      "id": 125,
-      "code": "li",
-      "name": "Liechtenstein"
+      id: 125,
+      code: "li",
+      name: "Liechtenstein"
     },
     {
-      "id": 126,
-      "code": "lt",
-      "name": "Lithuania"
+      id: 126,
+      code: "lt",
+      name: "Lithuania"
     },
     {
-      "id": 127,
-      "code": "lu",
-      "name": "Luxembourg"
+      id: 127,
+      code: "lu",
+      name: "Luxembourg"
     },
     {
-      "id": 128,
-      "code": "mo",
-      "name": "Macao"
+      id: 128,
+      code: "mo",
+      name: "Macao"
     },
     {
-      "id": 129,
-      "code": "mk",
-      "name": "Macedonia"
+      id: 129,
+      code: "mk",
+      name: "Macedonia"
     },
     {
-      "id": 130,
-      "code": "mg",
-      "name": "Madagascar"
+      id: 130,
+      code: "mg",
+      name: "Madagascar"
     },
     {
-      "id": 131,
-      "code": "mw",
-      "name": "Malawi"
+      id: 131,
+      code: "mw",
+      name: "Malawi"
     },
     {
-      "id": 132,
-      "code": "my",
-      "name": "Malaysia"
+      id: 132,
+      code: "my",
+      name: "Malaysia"
     },
     {
-      "id": 133,
-      "code": "mv",
-      "name": "Maldives"
+      id: 133,
+      code: "mv",
+      name: "Maldives"
     },
     {
-      "id": 134,
-      "code": "ml",
-      "name": "Mali"
+      id: 134,
+      code: "ml",
+      name: "Mali"
     },
     {
-      "id": 135,
-      "code": "mt",
-      "name": "Malta"
+      id: 135,
+      code: "mt",
+      name: "Malta"
     },
     {
-      "id": 136,
-      "code": "mh",
-      "name": "Marshall Islands"
+      id: 136,
+      code: "mh",
+      name: "Marshall Islands"
     },
     {
-      "id": 137,
-      "code": "mq",
-      "name": "Martinique"
+      id: 137,
+      code: "mq",
+      name: "Martinique"
     },
     {
-      "id": 138,
-      "code": "mr",
-      "name": "Mauritania"
+      id: 138,
+      code: "mr",
+      name: "Mauritania"
     },
     {
-      "id": 139,
-      "code": "mu",
-      "name": "Mauritius"
+      id: 139,
+      code: "mu",
+      name: "Mauritius"
     },
     {
-      "id": 140,
-      "code": "yt",
-      "name": "Mayotte"
+      id: 140,
+      code: "yt",
+      name: "Mayotte"
     },
     {
-      "id": 141,
-      "code": "mx",
-      "name": "Mexico"
+      id: 141,
+      code: "mx",
+      name: "Mexico"
     },
     {
-      "id": 142,
-      "code": "fm",
-      "name": "Micronesia"
+      id: 142,
+      code: "fm",
+      name: "Micronesia"
     },
     {
-      "id": 143,
-      "code": "md",
-      "name": "Moldova"
+      id: 143,
+      code: "md",
+      name: "Moldova"
     },
     {
-      "id": 144,
-      "code": "mc",
-      "name": "Monaco"
+      id: 144,
+      code: "mc",
+      name: "Monaco"
     },
     {
-      "id": 145,
-      "code": "mn",
-      "name": "Mongolia"
+      id: 145,
+      code: "mn",
+      name: "Mongolia"
     },
     {
-      "id": 146,
-      "code": "me",
-      "name": "Montenegro"
+      id: 146,
+      code: "me",
+      name: "Montenegro"
     },
     {
-      "id": 147,
-      "code": "ms",
-      "name": "Montserrat"
+      id: 147,
+      code: "ms",
+      name: "Montserrat"
     },
     {
-      "id": 148,
-      "code": "ma",
-      "name": "Morocco"
+      id: 148,
+      code: "ma",
+      name: "Morocco"
     },
     {
-      "id": 149,
-      "code": "mz",
-      "name": "Mozambique"
+      id: 149,
+      code: "mz",
+      name: "Mozambique"
     },
     {
-      "id": 150,
-      "code": "mm",
-      "name": "Myanmar"
+      id: 150,
+      code: "mm",
+      name: "Myanmar"
     },
     {
-      "id": 151,
-      "code": "na",
-      "name": "Namibia"
+      id: 151,
+      code: "na",
+      name: "Namibia"
     },
     {
-      "id": 152,
-      "code": "nr",
-      "name": "Nauru"
+      id: 152,
+      code: "nr",
+      name: "Nauru"
     },
     {
-      "id": 153,
-      "code": "np",
-      "name": "Nepal"
+      id: 153,
+      code: "np",
+      name: "Nepal"
     },
     {
-      "id": 154,
-      "code": "nl",
-      "name": "Netherlands"
+      id: 154,
+      code: "nl",
+      name: "Netherlands"
     },
     {
-      "id": 155,
-      "code": "an",
-      "name": "Netherlands Antilles"
+      id: 155,
+      code: "an",
+      name: "Netherlands Antilles"
     },
     {
-      "id": 156,
-      "code": "nc",
-      "name": "New Caledonia"
+      id: 156,
+      code: "nc",
+      name: "New Caledonia"
     },
     {
-      "id": 157,
-      "code": "nz",
-      "name": "New Zealand"
+      id: 157,
+      code: "nz",
+      name: "New Zealand"
     },
     {
-      "id": 158,
-      "code": "ni",
-      "name": "Nicaragua"
+      id: 158,
+      code: "ni",
+      name: "Nicaragua"
     },
     {
-      "id": 159,
-      "code": "ne",
-      "name": "Niger"
+      id: 159,
+      code: "ne",
+      name: "Niger"
     },
     {
-      "id": 160,
-      "code": "ng",
-      "name": "Nigeria"
+      id: 160,
+      code: "ng",
+      name: "Nigeria"
     },
     {
-      "id": 161,
-      "code": "nu",
-      "name": "Niue"
+      id: 161,
+      code: "nu",
+      name: "Niue"
     },
     {
-      "id": 162,
-      "code": "nf",
-      "name": "Norfolk Island"
+      id: 162,
+      code: "nf",
+      name: "Norfolk Island"
     },
     {
-      "id": 163,
-      "code": "mp",
-      "name": "Northern Mariana Islands"
+      id: 163,
+      code: "mp",
+      name: "Northern Mariana Islands"
     },
     {
-      "id": 164,
-      "code": "no",
-      "name": "Norway"
+      id: 164,
+      code: "no",
+      name: "Norway"
     },
     {
-      "id": 165,
-      "code": "om",
-      "name": "Oman"
+      id: 165,
+      code: "om",
+      name: "Oman"
     },
     {
-      "id": 166,
-      "code": "pk",
-      "name": "Pakistan"
+      id: 166,
+      code: "pk",
+      name: "Pakistan"
     },
     {
-      "id": 167,
-      "code": "pw",
-      "name": "Palau"
+      id: 167,
+      code: "pw",
+      name: "Palau"
     },
     {
-      "id": 168,
-      "code": "ps",
-      "name": "Palestinian Territory, Occupied"
+      id: 168,
+      code: "ps",
+      name: "Palestinian Territory, Occupied"
     },
     {
-      "id": 169,
-      "code": "pa",
-      "name": "Panama"
+      id: 169,
+      code: "pa",
+      name: "Panama"
     },
     {
-      "id": 170,
-      "code": "pg",
-      "name": "Papua New Guinea"
+      id: 170,
+      code: "pg",
+      name: "Papua New Guinea"
     },
     {
-      "id": 171,
-      "code": "py",
-      "name": "Paraguay"
+      id: 171,
+      code: "py",
+      name: "Paraguay"
     },
     {
-      "id": 172,
-      "code": "pe",
-      "name": "Peru"
+      id: 172,
+      code: "pe",
+      name: "Peru"
     },
     {
-      "id": 173,
-      "code": "ph",
-      "name": "Philippines"
+      id: 173,
+      code: "ph",
+      name: "Philippines"
     },
     {
-      "id": 174,
-      "code": "pn",
-      "name": "Pitcairn"
+      id: 174,
+      code: "pn",
+      name: "Pitcairn"
     },
     {
-      "id": 175,
-      "code": "pl",
-      "name": "Poland"
+      id: 175,
+      code: "pl",
+      name: "Poland"
     },
     {
-      "id": 176,
-      "code": "pt",
-      "name": "Portugal"
+      id: 176,
+      code: "pt",
+      name: "Portugal"
     },
     {
-      "id": 177,
-      "code": "pr",
-      "name": "Puerto Rico"
+      id: 177,
+      code: "pr",
+      name: "Puerto Rico"
     },
     {
-      "id": 178,
-      "code": "qa",
-      "name": "Qatar"
+      id: 178,
+      code: "qa",
+      name: "Qatar"
     },
     {
-      "id": 179,
-      "code": "re",
-      "name": "Reunion"
+      id: 179,
+      code: "re",
+      name: "Reunion"
     },
     {
-      "id": 180,
-      "code": "ro",
-      "name": "Romania"
+      id: 180,
+      code: "ro",
+      name: "Romania"
     },
     {
-      "id": 181,
-      "code": "ru",
-      "name": "Russian Federation"
+      id: 181,
+      code: "ru",
+      name: "Russian Federation"
     },
     {
-      "id": 182,
-      "code": "rw",
-      "name": "Rwanda"
+      id: 182,
+      code: "rw",
+      name: "Rwanda"
     },
     {
-      "id": 183,
-      "code": "bl",
-      "name": "Saint Barthelemy"
+      id: 183,
+      code: "bl",
+      name: "Saint Barthelemy"
     },
     {
-      "id": 184,
-      "code": "sh",
-      "name": "Saint Helena"
+      id: 184,
+      code: "sh",
+      name: "Saint Helena"
     },
     {
-      "id": 185,
-      "code": "kn",
-      "name": "Saint Kitts And Nevis"
+      id: 185,
+      code: "kn",
+      name: "Saint Kitts And Nevis"
     },
     {
-      "id": 186,
-      "code": "lc",
-      "name": "Saint Lucia"
+      id: 186,
+      code: "lc",
+      name: "Saint Lucia"
     },
     {
-      "id": 187,
-      "code": "mf",
-      "name": "Saint Martin"
+      id: 187,
+      code: "mf",
+      name: "Saint Martin"
     },
     {
-      "id": 188,
-      "code": "pm",
-      "name": "Saint Pierre And Miquelon"
+      id: 188,
+      code: "pm",
+      name: "Saint Pierre And Miquelon"
     },
     {
-      "id": 189,
-      "code": "vc",
-      "name": "Saint Vincent And Grenadines"
+      id: 189,
+      code: "vc",
+      name: "Saint Vincent And Grenadines"
     },
     {
-      "id": 190,
-      "code": "ws",
-      "name": "Samoa"
+      id: 190,
+      code: "ws",
+      name: "Samoa"
     },
     {
-      "id": 191,
-      "code": "sm",
-      "name": "San Marino"
+      id: 191,
+      code: "sm",
+      name: "San Marino"
     },
     {
-      "id": 192,
-      "code": "st",
-      "name": "Sao Tome and Principe"
+      id: 192,
+      code: "st",
+      name: "Sao Tome and Principe"
     },
     {
-      "id": 193,
-      "code": "sa",
-      "name": "Saudi Arabia"
+      id: 193,
+      code: "sa",
+      name: "Saudi Arabia"
     },
     {
-      "id": 194,
-      "code": "sn",
-      "name": "Senegal"
+      id: 194,
+      code: "sn",
+      name: "Senegal"
     },
     {
-      "id": 195,
-      "code": "rs",
-      "name": "Serbia"
+      id: 195,
+      code: "rs",
+      name: "Serbia"
     },
     {
-      "id": 196,
-      "code": "sc",
-      "name": "Seychelles"
+      id: 196,
+      code: "sc",
+      name: "Seychelles"
     },
     {
-      "id": 197,
-      "code": "sl",
-      "name": "Sierra Leone"
+      id: 197,
+      code: "sl",
+      name: "Sierra Leone"
     },
     {
-      "id": 198,
-      "code": "sg",
-      "name": "Singapore"
+      id: 198,
+      code: "sg",
+      name: "Singapore"
     },
     {
-      "id": 199,
-      "code": "sk",
-      "name": "Slovakia"
+      id: 199,
+      code: "sk",
+      name: "Slovakia"
     },
     {
-      "id": 200,
-      "code": "si",
-      "name": "Slovenia"
+      id: 200,
+      code: "si",
+      name: "Slovenia"
     },
     {
-      "id": 201,
-      "code": "sb",
-      "name": "Solomon Islands"
+      id: 201,
+      code: "sb",
+      name: "Solomon Islands"
     },
     {
-      "id": 202,
-      "code": "so",
-      "name": "Somalia"
+      id: 202,
+      code: "so",
+      name: "Somalia"
     },
     {
-      "id": 203,
-      "code": "za",
-      "name": "South Africa"
+      id: 203,
+      code: "za",
+      name: "South Africa"
     },
     {
-      "id": 204,
-      "code": "gs",
-      "name": "South Georgia"
+      id: 204,
+      code: "gs",
+      name: "South Georgia"
     },
     {
-      "id": 205,
-      "code": "es",
-      "name": "Spain"
+      id: 205,
+      code: "es",
+      name: "Spain"
     },
     {
-      "id": 206,
-      "code": "lk",
-      "name": "SriLanka"
+      id: 206,
+      code: "lk",
+      name: "SriLanka"
     },
     {
-      "id": 207,
-      "code": "sd",
-      "name": "Sudan"
+      id: 207,
+      code: "sd",
+      name: "Sudan"
     },
     {
-      "id": 208,
-      "code": "sr",
-      "name": "Suriname"
+      id: 208,
+      code: "sr",
+      name: "Suriname"
     },
     {
-      "id": 209,
-      "code": "sj",
-      "name": "Svalbard And Jan Mayen"
+      id: 209,
+      code: "sj",
+      name: "Svalbard And Jan Mayen"
     },
     {
-      "id": 210,
-      "code": "sz",
-      "name": "Swaziland"
+      id: 210,
+      code: "sz",
+      name: "Swaziland"
     },
     {
-      "id": 211,
-      "code": "se",
-      "name": "Sweden"
+      id: 211,
+      code: "se",
+      name: "Sweden"
     },
     {
-      "id": 212,
-      "code": "ch",
-      "name": "Switzerland"
+      id: 212,
+      code: "ch",
+      name: "Switzerland"
     },
     {
-      "id": 213,
-      "code": "sy",
-      "name": "Syrian Arab Republic"
+      id: 213,
+      code: "sy",
+      name: "Syrian Arab Republic"
     },
     {
-      "id": 214,
-      "code": "tw",
-      "name": "Taiwan"
+      id: 214,
+      code: "tw",
+      name: "Taiwan"
     },
     {
-      "id": 215,
-      "code": "tj",
-      "name": "Tajikistan"
+      id: 215,
+      code: "tj",
+      name: "Tajikistan"
     },
     {
-      "id": 216,
-      "code": "tz",
-      "name": "Tanzania"
+      id: 216,
+      code: "tz",
+      name: "Tanzania"
     },
     {
-      "id": 217,
-      "code": "th",
-      "name": "Thailand"
+      id: 217,
+      code: "th",
+      name: "Thailand"
     },
     {
-      "id": 218,
-      "code": "tl",
-      "name": "Timor-Leste"
+      id: 218,
+      code: "tl",
+      name: "Timor-Leste"
     },
     {
-      "id": 219,
-      "code": "tg",
-      "name": "Togo"
+      id: 219,
+      code: "tg",
+      name: "Togo"
     },
     {
-      "id": 220,
-      "code": "tk",
-      "name": "Tokelau"
+      id: 220,
+      code: "tk",
+      name: "Tokelau"
     },
     {
-      "id": 221,
-      "code": "to",
-      "name": "Tonga"
+      id: 221,
+      code: "to",
+      name: "Tonga"
     },
     {
-      "id": 222,
-      "code": "tt",
-      "name": "Trinidad and Tobago"
+      id: 222,
+      code: "tt",
+      name: "Trinidad and Tobago"
     },
     {
-      "id": 223,
-      "code": "tn",
-      "name": "Tunisia"
+      id: 223,
+      code: "tn",
+      name: "Tunisia"
     },
     {
-      "id": 224,
-      "code": "tr",
-      "name": "Turkey"
+      id: 224,
+      code: "tr",
+      name: "Turkey"
     },
     {
-      "id": 225,
-      "code": "tm",
-      "name": "Turkmenistan"
+      id: 225,
+      code: "tm",
+      name: "Turkmenistan"
     },
     {
-      "id": 226,
-      "code": "tc",
-      "name": "Turks And Caicos Islands"
+      id: 226,
+      code: "tc",
+      name: "Turks And Caicos Islands"
     },
     {
-      "id": 227,
-      "code": "tv",
-      "name": "Tuvalu"
+      id: 227,
+      code: "tv",
+      name: "Tuvalu"
     },
     {
-      "id": 228,
-      "code": "ug",
-      "name": "Uganda"
+      id: 228,
+      code: "ug",
+      name: "Uganda"
     },
     {
-      "id": 229,
-      "code": "ua",
-      "name": "Ukraine"
+      id: 229,
+      code: "ua",
+      name: "Ukraine"
     },
     {
-      "id": 230,
-      "code": "ae",
-      "name": "United Arab Emirates"
+      id: 230,
+      code: "ae",
+      name: "United Arab Emirates"
     },
     {
-      "id": 231,
-      "code": "gb",
-      "name": "United Kingdom"
+      id: 231,
+      code: "gb",
+      name: "United Kingdom"
     },
     {
-      "id": 232,
-      "code": "us",
-      "name": "United States"
+      id: 232,
+      code: "us",
+      name: "United States"
     },
     {
-      "id": 233,
-      "code": "um",
-      "name": "United States Outlying Islands"
+      id: 233,
+      code: "um",
+      name: "United States Outlying Islands"
     },
     {
-      "id": 234,
-      "code": "uy",
-      "name": "Uruguay"
+      id: 234,
+      code: "uy",
+      name: "Uruguay"
     },
     {
-      "id": 235,
-      "code": "uz",
-      "name": "Uzbekistan"
+      id: 235,
+      code: "uz",
+      name: "Uzbekistan"
     },
     {
-      "id": 236,
-      "code": "vu",
-      "name": "Vanuatu"
+      id: 236,
+      code: "vu",
+      name: "Vanuatu"
     },
     {
-      "id": 237,
-      "code": "ve",
-      "name": "Venezuela"
+      id: 237,
+      code: "ve",
+      name: "Venezuela"
     },
     {
-      "id": 238,
-      "code": "vn",
-      "name": "Vietnam"
+      id: 238,
+      code: "vn",
+      name: "Vietnam"
     },
     {
-      "id": 239,
-      "code": "vg",
-      "name": "Virgin Islands (British)"
+      id: 239,
+      code: "vg",
+      name: "Virgin Islands (British)"
     },
     {
-      "id": 240,
-      "code": "vi",
-      "name": "Virgin Islands (U.S)"
+      id: 240,
+      code: "vi",
+      name: "Virgin Islands (U.S)"
     },
     {
-      "id": 241,
-      "code": "wf",
-      "name": "Wallis and Futana Islands"
+      id: 241,
+      code: "wf",
+      name: "Wallis and Futana Islands"
     },
     {
-      "id": 242,
-      "code": "eh",
-      "name": "Western Sahara"
+      id: 242,
+      code: "eh",
+      name: "Western Sahara"
     },
     {
-      "id": 243,
-      "code": "ye",
-      "name": "Yemen"
+      id: 243,
+      code: "ye",
+      name: "Yemen"
     },
     {
-      "id": 244,
-      "code": "zm",
-      "name": "Zambia"
+      id: 244,
+      code: "zm",
+      name: "Zambia"
     },
     {
-      "id": 245,
-      "code": "zw",
-      "name": "Zimbabwe"
+      id: 245,
+      code: "zw",
+      name: "Zimbabwe"
     }];
 
   constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef,
@@ -1321,7 +1321,6 @@ export class AppComponent {
   }
 
   doSearchDownload(): void {
-    console.log('11111');
     chrome.tabs.query({
       currentWindow: true,
       active: true
@@ -1342,36 +1341,33 @@ export class AppComponent {
   }
 
   changeAddress() {
-    console.log(this.country_list);
     if (this.country_list != null) {
-      console.log('23312312');
-      let country = this.isoCountries.find(it => it.id === this.country_list);
-    console.log(country.code);
-    console.log('22222224444');
-    this.country_list = country.code.toUpperCase();
-    console.log(this.country_list);
+      
+      this.isoCountries.filter(it => {
+        if (it.id == this.country_list) {
+          this.country = it;
+        }
+      });
+      this.country_list = this.country.code.toUpperCase();
 
-    this.countryData = {
-      locationType: 'COUNTRY',
-      district: this.country_list,
-      countryCode: this.country_list
-    };
+      this.countryData = {
+        locationType: 'COUNTRY',
+        district: this.country_list,
+        countryCode: this.country_list
+      };
 
-    var change_add_url = 'https://www.amazon.com/gp/delivery/ajax/address-change.html';
-    this._appService.changeAdd(this.countryData.locationType, this.countryData.district, this.countryData.countryCode, change_add_url).subscribe((data) => {
-      console.log(data);
-      // this.doSearchDownload();
-      // this.processMainlist(this.tabUrl);
+      var change_add_url = 'https://www.amazon.com/gp/delivery/ajax/address-change.html';
+      this._appService.changeAdd(this.countryData.locationType, this.countryData.district, this.countryData.countryCode, change_add_url).subscribe((data) => {
+        // this.doSearchDownload();
+        // this.processMainlist(this.tabUrl);
 
-    });
+      });
     }
   }
 
   processMainlist(tabUrl): void {
-console.log('33333');
     this.asinList = [];
     for (let i = this.from_page; i <= this.to_page; i++) {
-      console.log('page', i);
       let perms = '&page=' + i;
       let url = tabUrl + perms;
       this.getAsinList(url, (this.to_page === i) ? true : false);
@@ -1379,9 +1375,7 @@ console.log('33333');
   }
 
   getAsinList(url, is_last) {
-    console.log(is_last);
     this._appService.getURLData(url).subscribe((data) => {
-      // console.log(data);
       let result = data.match(/data-asin="[A-Za-z0-9]*"/g);
       result = result.map(item => {
         item = item.replace('data-asin=', '');
@@ -1394,17 +1388,14 @@ console.log('33333');
         this.asinList = this.asinList.concat(asinData);
       });
       if (is_last === true) {
-        console.log('processForAsinZone', this.asinList);
         this.processForAsin();
       }
     });
   }
 
   processForAsin() {
-    console.log('processForAsinfn', this.asinList);
     this.productList = [];
     for (let i = 0; i < this.asinList.length; i++) {
-      console.log('asinList', i);
       this.getAsinDetail(this.asinList[i], ((this.asinList.length - 1) === i) ? true : false);
     }
   }
@@ -1437,37 +1428,15 @@ console.log('33333');
       this.criticalbrandedproduct = (this.critical_branded_product) ? (this.critical_branded_product) : '';
       this.SBAtag = (this.SBA_tag) ? (this.SBA_tag) : '';
       this.product = (this.products) ? (this.products) : '';
-      console.log(this.SBAtag);
-      console.log(this.discountedproduct);
-      console.log(this.requiringselectionproduct);
-      console.log(this.amazonprimeproduct);
-      console.log(this.min_stock);
-      console.log(this.mini_price);
-      console.log(this.maxi_price);
-      console.log(this.skucode);
-      console.log(this.profitmargin);
-      console.log(this.amazoncommision);
-      console.log(this.exchangedifference);
-      console.log(this.cloudinventoryproduct);
-      console.log(this.criticalbrandedproduct);
-      console.log(this.trademarkedproduct);
 
 
       if (this.trademarkedproduct !== '') {
-        console.log('trademark product');
-        console.log(product_brand);
-        console.log(this.trademarklist);
 
         // var brandlist = this.brandlist.split('\n');
-        // console.log(brandlist);
 
         var productbrand = this.trademarklist.includes(product_brand);
-        console.log(productbrand);
 
         if (productbrand !== true) {
-          console.log('var');
-          console.log(productbrand);
-
           let _result = {
             'Product Title': product_title,
             'Price': product_price,
@@ -1476,7 +1445,7 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
+
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -1484,19 +1453,12 @@ console.log('33333');
       }
 
       else if (this.cloudinventoryproduct !== '') {
-        console.log('cloud inventory product');
-        console.log(product_brand);
-        console.log(this.cloudinventroylist);
 
         // var brandlist = this.brandlist.split('\n');
-        // console.log(brandlist);
 
         var productbrand = this.cloudinventroylist.includes(product_brand);
-        console.log(productbrand);
 
         if (productbrand !== true) {
-          console.log('var');
-          console.log(productbrand);
 
           let _result = {
             'Product Title': product_title,
@@ -1506,7 +1468,7 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
+
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -1514,19 +1476,11 @@ console.log('33333');
       }
 
       else if (this.criticalbrandedproduct !== '') {
-        console.log('critical brand');
-        console.log(product_brand);
-        console.log(this.criticalbrandlist);
-
-        // var brandlist = this.brandlist.split('\n');
-        // console.log(brandlist);
 
         var productbrand = this.criticalbrandlist.includes(product_brand);
-        console.log(productbrand);
 
         if (productbrand !== true) {
-          console.log('var');
-          console.log(productbrand);
+
 
           let _result = {
             'Product Title': product_title,
@@ -1536,7 +1490,7 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
+
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -1548,26 +1502,14 @@ console.log('33333');
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
 
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
+
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
-
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_discounted_price === null && product_amazon_prime === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -1577,14 +1519,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1592,7 +1532,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1600,7 +1539,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_amazon_prime === null && product_discounted_price === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1608,7 +1546,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1616,7 +1553,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1624,7 +1560,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1632,7 +1567,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1640,7 +1574,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1648,7 +1581,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1656,7 +1588,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1664,7 +1595,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1672,7 +1602,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1680,7 +1609,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1688,7 +1616,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1696,7 +1623,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1704,7 +1630,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1712,7 +1637,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1720,7 +1644,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1728,7 +1651,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1736,7 +1658,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_amazon_prime === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1744,7 +1665,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1752,7 +1672,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1760,7 +1679,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1768,7 +1686,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1776,7 +1693,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1784,7 +1700,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1804,26 +1719,13 @@ console.log('33333');
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
 
         let product_sold_by = parsedHtml.getElementById('merchant-info');
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
-
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_discounted_price === null && product_sold_by === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -1833,14 +1735,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1848,7 +1748,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1856,7 +1755,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_sold_by === null && product_discounted_price === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1864,7 +1762,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1872,7 +1769,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1880,7 +1776,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1888,7 +1783,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1896,7 +1790,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1904,7 +1797,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1912,7 +1804,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1920,7 +1811,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1928,7 +1818,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1936,7 +1825,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1944,7 +1832,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1952,7 +1839,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1960,7 +1846,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1968,7 +1853,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1976,7 +1860,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1984,7 +1867,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -1992,7 +1874,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2000,7 +1881,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2008,7 +1888,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2016,7 +1895,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2024,7 +1902,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2032,7 +1909,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2040,7 +1916,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2058,28 +1933,17 @@ console.log('33333');
 
       else if (this.amazonprimeproduct !== '' && this.requiringselectionproduct !== '' && this.SBAtag !== '') {
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
 
 
         let product_sold_by = parsedHtml.getElementById('merchant-info');
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
+
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_amazon_prime === null && product_sold_by === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -2089,14 +1953,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2104,7 +1966,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2112,7 +1973,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_sold_by === null && product_amazon_prime === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2120,7 +1980,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2128,7 +1987,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2136,7 +1994,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2144,7 +2001,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2152,7 +2008,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2160,7 +2015,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2168,7 +2022,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2176,7 +2029,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2184,7 +2036,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2192,7 +2043,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2200,7 +2050,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2208,7 +2057,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2216,7 +2064,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2224,7 +2071,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2232,7 +2078,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2240,7 +2085,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2248,7 +2092,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2256,7 +2099,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2264,7 +2106,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2272,7 +2113,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2280,7 +2120,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2288,7 +2127,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2296,7 +2134,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2318,19 +2155,10 @@ console.log('33333');
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
-
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select size style and color prod');
+
 
           let _result = {
             'Product Title': product_title,
@@ -2340,14 +2168,13 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
+
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2355,7 +2182,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2363,7 +2189,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2371,7 +2196,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2379,7 +2203,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2387,7 +2210,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_discounted_price === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2395,7 +2217,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2403,7 +2224,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2411,7 +2231,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2419,7 +2238,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null && product_color_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2427,7 +2245,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2435,7 +2252,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2443,7 +2259,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2451,7 +2266,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2459,7 +2273,6 @@ console.log('33333');
         }
 
         else if (product_discounted_price === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2477,22 +2290,13 @@ console.log('33333');
 
       else if (this.amazonprimeproduct !== '' && this.requiringselectionproduct !== '') {
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -2502,14 +2306,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2517,7 +2319,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2525,7 +2326,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2533,7 +2333,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2541,7 +2340,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2549,7 +2347,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_amazon_prime === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2557,7 +2354,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2565,7 +2361,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2573,7 +2368,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2581,7 +2375,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null && product_color_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2589,7 +2382,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2597,7 +2389,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2605,7 +2396,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2613,7 +2403,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2621,7 +2410,6 @@ console.log('33333');
         }
 
         else if (product_amazon_prime === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2639,22 +2427,14 @@ console.log('33333');
 
       else if (this.SBAtag !== '' && this.requiringselectionproduct !== '') {
         let product_sold_by = parsedHtml.getElementById('merchant-info');
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
+
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
 
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -2664,14 +2444,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2679,7 +2457,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2687,7 +2464,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2695,7 +2471,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2703,7 +2478,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2711,7 +2485,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null && product_sold_by === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2719,7 +2492,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2727,7 +2499,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2735,7 +2506,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null && product_style_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2743,7 +2513,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null && product_color_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2751,7 +2520,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2759,7 +2527,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2767,7 +2534,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2775,7 +2541,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2783,7 +2548,6 @@ console.log('33333');
         }
 
         else if (product_sold_by === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2803,14 +2567,6 @@ console.log('33333');
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
 
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
-
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
-
 
         if (product_discounted_price === null && product_amazon_prime === null) {
           let _result = {
@@ -2821,7 +2577,6 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -2836,13 +2591,6 @@ console.log('33333');
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
         let product_sold_by = parsedHtml.getElementById('merchant-info');
 
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
-
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
 
         if (product_discounted_price === null && product_sold_by === null) {
           let _result = {
@@ -2853,7 +2601,6 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -2866,16 +2613,10 @@ console.log('33333');
 
       else if (this.amazonprimeproduct !== '' && this.SBAtag !== '') {
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
+
 
         let product_sold_by = parsedHtml.getElementById('merchant-info');
 
-
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
 
         if (product_amazon_prime === null && product_sold_by === null) {
           let _result = {
@@ -2886,7 +2627,6 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -2898,12 +2638,8 @@ console.log('33333');
       }
 
       else if (this.discountedproduct !== '') {
-        console.log('if discounted prod');
 
         let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
-        console.log('discounted prod');
-        console.log(product_discounted_price);
-        console.log('discounted prod');
 
         if (product_discounted_price === null) {
           let _result = {
@@ -2914,12 +2650,10 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         } else {
-          console.log('else discounted prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2930,19 +2664,13 @@ console.log('33333');
 
       else if (this.requiringselectionproduct !== '') {
         // a-padding-mini
-        console.log('requiring select prod');
 
         let product_style_selection = parsedHtml.getElementById('style_name_0');
         let product_color_selection = parsedHtml.getElementById('color_name_0');
         let product_size_selection = parsedHtml.getElementById('size_name_0');
-        console.log('requiring select prod');
-        console.log(product_style_selection);
-        console.log(product_color_selection);
-        console.log(product_size_selection);
-        console.log('requiring select prod');
+
 
         if (product_size_selection === null && product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select size style and color prod');
 
           let _result = {
             'Product Title': product_title,
@@ -2952,14 +2680,12 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         }
 
         else if (product_color_selection === null && product_size_selection === null) {
-          console.log('if requiring select color and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2967,7 +2693,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_size_selection === null) {
-          console.log('if requiring select style and size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2975,7 +2700,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null && product_color_selection === null) {
-          console.log('if requiring select style and color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2983,7 +2707,6 @@ console.log('33333');
         }
 
         else if (product_style_selection === null) {
-          console.log('if requiring select style prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2991,7 +2714,6 @@ console.log('33333');
         }
 
         else if (product_color_selection === null) {
-          console.log('if requiring select color prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -2999,7 +2721,6 @@ console.log('33333');
         }
 
         else if (product_size_selection === null) {
-          console.log('if requiring select size prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -3014,12 +2735,8 @@ console.log('33333');
       }
 
       else if (this.amazonprimeproduct !== '') {
-        console.log('if amazon prime prod');
 
         let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-        console.log('amazon prime prod');
-        console.log(product_amazon_prime);
-        console.log('amazon prime prod');
 
         if (product_amazon_prime === null) {
           let _result = {
@@ -3030,12 +2747,10 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         } else {
-          console.log('else amazon prime prod');
 
           if (is_last === true) {
             this.downloadCsv();
@@ -3046,11 +2761,7 @@ console.log('33333');
 
       else if (this.SBAtag !== '') {
         let product_sold_by = parsedHtml.getElementById('merchant-info');
-        console.log('sold by');
-        console.log(product_sold_by);
-        console.log('sold by');
 
-        console.log('if unlist sold by product');
         if (product_sold_by === null) {
           let _result = {
             'Product Title': product_title,
@@ -3060,12 +2771,10 @@ console.log('33333');
           };
 
           this.productList = this.productList.concat(_result);
-          console.log(this.productList);
           if (is_last === true) {
             this.downloadCsv();
           }
         } else {
-          console.log('else unlist sold by product');
           if (is_last === true) {
             this.downloadCsv();
           }
@@ -3082,9 +2791,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
@@ -3103,14 +2810,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.exchangedifference !== '') {
-        console.log('profit amazon exchnage');
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
@@ -3127,14 +2832,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.skucode !== '') {
-        console.log('profit amazon sku');
 
         let _result1 = {
           'Product Title': product_title,
@@ -3144,9 +2847,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
@@ -3162,14 +2863,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.profitmargin !== '' && this.exchangedifference !== '' && this.skucode !== '') {
-        console.log('profit exchange sku');
         let _result1 = {
           'Product Title': product_title,
           'Price': product_price,
@@ -3178,9 +2877,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         this.exch_difference = (this.product_price * this.exchange_difference);
@@ -3197,14 +2894,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.amazoncommision !== '' && this.exchangedifference !== '' && this.skucode !== '') {
-        console.log('amazon exchange sku');
         let _result1 = {
           'Product Title': product_title,
           'Price': product_price,
@@ -3213,9 +2908,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
         this.exch_difference = (this.product_price * this.exchange_difference);
@@ -3232,14 +2925,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
-      else if (this.profitmargin !== '' && this.amazoncommision !== '' ) {
-        console.log('profit amazon');
+      else if (this.profitmargin !== '' && this.amazoncommision !== '') {
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
@@ -3256,14 +2947,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
-      else if (this.profitmargin !== '' && this.exchangedifference !== '' ) {
-        console.log('profit exchnage');
+      else if (this.profitmargin !== '' && this.exchangedifference !== '') {
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
         // this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
@@ -3280,14 +2969,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.profitmargin !== '' && this.skucode !== '') {
-        console.log('profit sku');
 
         let _result1 = {
           'Product Title': product_title,
@@ -3297,9 +2984,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
 
@@ -3313,14 +2998,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.amazoncommision !== '' && this.exchangedifference !== '') {
-        console.log('amazon exchange');
 
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
         this.exch_difference = (this.product_price * this.exchange_difference);
@@ -3336,14 +3019,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.amazoncommision !== '' && this.skucode !== '') {
-        console.log('amazon sku');
 
         let _result1 = {
           'Product Title': product_title,
@@ -3353,9 +3034,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
 
@@ -3369,14 +3048,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.exchangedifference !== '' && this.skucode !== '') {
-        console.log('amazon sku');
 
         let _result1 = {
           'Product Title': product_title,
@@ -3386,9 +3063,7 @@ console.log('33333');
         };
 
         this.productList1 = this.productList1.concat(_result1);
-        console.log(this.productList);
         let sku_code1 = this.sku_code + '1000' + this.productList1.length;
-        console.log(sku_code1);
 
         this.exch_difference = (this.product_price * this.exchange_difference);
 
@@ -3403,14 +3078,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.profitmargin !== '') {
-        console.log('profit margin');
 
         this.pro_margin = ((this.product_price * this.profit_margin) / 100 );
 
@@ -3423,14 +3096,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.amazoncommision !== '') {
-        console.log('amazon commision');
 
         this.ama_commision = ((this.product_price * this.amazon_commision) / 100 );
 
@@ -3443,14 +3114,12 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.exchangedifference !== '') {
-        console.log('exchange difference');
 
         this.exch_difference = (this.product_price * this.exchange_difference);
 
@@ -3463,7 +3132,6 @@ console.log('33333');
         };
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
@@ -3471,7 +3139,6 @@ console.log('33333');
 
       else if (this.min_stock != null && parseInt(product_quantity) >= this.minimum_stock && this.mini_price !== '' && this.maxi_price !== '') {
         // This array contains strings that needs to be removed from main array
-        console.log('if min stock and min max price');
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
         this.max_price = this.product_price + ((this.product_price * this.maximum_price) / 100 );
 
@@ -3486,7 +3153,6 @@ console.log('33333');
 
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
@@ -3494,7 +3160,6 @@ console.log('33333');
 
       else if (this.min_stock != null && parseInt(product_quantity) >= this.minimum_stock) {
         // This array contains strings that needs to be removed from main array
-        console.log('if min stock');
         let _result = {
           'Product Title': product_title,
           'Price': product_price,
@@ -3504,7 +3169,6 @@ console.log('33333');
 
 
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
@@ -3512,12 +3176,9 @@ console.log('33333');
       }
 
       else if (this.mini_price !== '' && this.maxi_price !== '' && this.min_stock === '') {
-        console.log('min max price');
 
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
         this.max_price = this.product_price + ((this.product_price * this.maximum_price) / 100 );
-        console.log(this.min_price);
-        console.log(this.max_price);
         let _result = {
           'Product Title': product_title,
           'Price': product_price,
@@ -3526,22 +3187,16 @@ console.log('33333');
           'Minimum Price': this.min_price,
           'Maximum Price': this.max_price
         };
-        // this.result = _result;
-        // console.log( this.result);
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
         if (is_last === true) {
           this.downloadCsv();
         }
       }
 
       else if (this.mini_price === '' && this.maxi_price === '' && this.min_stock === '' && this.skucode === '' && this.profitmargin === '' && this.exchangedifference === '' && this.SBAtag === '' && this.discountedproduct === '' && this.requiringselectionproduct === '' && this.amazonprimeproduct === '' && this.cloudinventoryproduct === '' && this.criticalbrandedproduct === '' && this.trademarkedproduct === '') {
-        console.log('all null ');
 
         this.min_price = this.product_price - ((this.product_price * this.minimum_price) / 100 );
         this.max_price = this.product_price + ((this.product_price * this.maximum_price) / 100 );
-        console.log(this.min_price);
-        console.log(this.max_price);
         let _result = {
           'Product Title': product_title,
           'Price': product_price,
@@ -3549,9 +3204,7 @@ console.log('33333');
           'Quantity': product_quantity
         };
         // this.result = _result;
-        // console.log( this.result);
         this.productList = this.productList.concat(_result);
-        console.log(this.productList);
 
         if (is_last === true) {
           this.downloadCsv();
@@ -3568,37 +3221,37 @@ console.log('33333');
     } else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.exchangedifference !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Profit Margin', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
-    }  else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.exchangedifference !== '')  {
+    } else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.exchangedifference !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
-    } else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.skucode !== '')  {
+    } else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision', 'SKU Code'];
 
-    } else if (this.profitmargin !== '' && this.exchangedifference !== '' && this.skucode !== '')  {
+    } else if (this.profitmargin !== '' && this.exchangedifference !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Exchange Difference (CAD)', 'SKU Code'];
 
-    }else if (this.amazoncommision !== '' && this.exchangedifference !== '' && this.skucode !== '')  {
+    } else if (this.amazoncommision !== '' && this.exchangedifference !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'Exchange Difference (CAD)', 'SKU Code'];
 
-    } else if (this.profitmargin !== '' && this.amazoncommision !== '')  {
+    } else if (this.profitmargin !== '' && this.amazoncommision !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision'];
 
-    }  else if (this.profitmargin !== '' && this.exchangedifference !== '')  {
+    } else if (this.profitmargin !== '' && this.exchangedifference !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Exchange Difference (CAD)'];
 
-    }  else if (this.profitmargin !== '' && this.skucode !== '')  {
+    } else if (this.profitmargin !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'SKU Code'];
 
-    } else if (this.amazoncommision !== '' && this.exchangedifference !== '')  {
+    } else if (this.amazoncommision !== '' && this.exchangedifference !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
-    } else if (this.amazoncommision !== '' && this.skucode !== '')  {
+    } else if (this.amazoncommision !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'SKU Code'];
 
-    } else if (this.exchangedifference !== '' && this.skucode !== '')  {
+    } else if (this.exchangedifference !== '' && this.skucode !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Exchange Difference (CAD)', 'SKU Code'];
 
-    }  else if (this.profitmargin !== '')  {
+    } else if (this.profitmargin !== '') {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin'];
 
     } else if (this.amazoncommision !== '') {
@@ -3613,7 +3266,6 @@ console.log('33333');
     } else {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity'];
     }
-    console.log(this.product);
     if (this.product !== '') {
       new Angular5Csv(this.productList, this.product, {headers: (head)});
       this.overlaypopup = false;
@@ -3649,45 +3301,32 @@ console.log('33333');
   editCriticalBrand() {
     this.editcriticalbrandbox = true;
   }
+
   savecloudinventory() {
-    console.log(this.cloudinventroylist);
     localStorage.setItem('myCloudInventroylistObject', JSON.stringify(this.cloudinventroylist));
     this.editcloudinventorybox = false;
 
   }
 
   savetrademark() {
-    console.log(this.trademarklist);
     localStorage.setItem('myTradeMarkListObject', JSON.stringify(this.trademarklist));
     this.edittrademarkbox = false;
-
   }
 
   savecriticalbrand() {
-    console.log('critical brand');
-    console.log(this.criticalbrandlist);
     localStorage.setItem('myCriticalBrandListObject', JSON.stringify(this.criticalbrandlist));
     this.editcriticalbrandbox = false;
-
   }
 
   loadTradeMarkList() {
-    console.log('loadtrademarkitem');
-     this.trademarklist = JSON.parse(localStorage.getItem('myTradeMarkListObject'));
-    console.log(this.trademarklist);
-
+    this.trademarklist = JSON.parse(localStorage.getItem('myTradeMarkListObject'));
   }
+
   loadCloudInventoryList() {
-    console.log('loadcloudinventoryitem');
     this.cloudinventroylist = JSON.parse(localStorage.getItem('myCloudInventroylistObject'));
-    console.log(this.cloudinventroylist);
-
   }
+
   loadCriticalBrandList() {
-    console.log('loadcriticalbranditem');
     this.criticalbrandlist = JSON.parse(localStorage.getItem('myCriticalBrandListObject'));
-    console.log(this.criticalbrandlist);
-
-
   }
 }
