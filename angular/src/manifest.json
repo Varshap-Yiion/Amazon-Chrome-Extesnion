@@ -10,6 +10,9 @@
     "default_icon": "assets/amazon-logo.png",
     "default_title": "Amazon Tool Chrome Extension"
   },
+  "icons": { "16": "assets/amazon-logo.png",
+    "48": "assets/amazon-logo.png",
+    "128": "assets/amazon-logo.png" },
   "content_scripts": [
     {
       "js": ["contentPage.js"],

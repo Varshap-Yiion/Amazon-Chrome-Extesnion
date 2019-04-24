@@ -3,7 +3,7 @@
 <div class="header">
 <nav class="pos-f-t ">
 <nav class="navbar navbar-dark bg-dark">
-<a class="navbar-brand" href="#"><img src="assets/amazon-logo1.png"> Amazon Tool</a>
+<a class="navbar-brand" href="#"><img src="assets/amazon-logo.png"> Amazon Tool</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -158,7 +158,7 @@ style="width: 20px;float:right;"></h6>
         <div class="row">
           <div class="col-12">
             <div class="inner-sec">
-              <label class="label-title">Select Sotre Country</label>
+              <label class="label-title">Select Store Country</label>
               <select class="form-control" name="country" [(ngModel)]="country_list" #country="ngModel">
                 <!--<option value="" selected="selected">Please select</option>-->
                 <option *ngFor="let country of isoCountries" [value]="country.id">{{country.name}}</option>
@@ -479,16 +479,17 @@ style="width: 20px;float:right;"></h6>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox9" [(ngModel)]="SBA_tag" name="SBA_tag_field"
                        #SBA_tag_field="ngModel">
-                <label class="custom-control-label label-title" for="checkbox9">SBA tag product</label>
+                <label class="custom-control-label label-title disabled" for="checkbox9">SBA tag product</label>
               </div>
 
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox2">
-                <label class="custom-control-label label-title" for="checkbox2">Ad-on product</label>
+                <label class="custom-control-label label-title disabled" for="checkbox2">Ad-on product</label>
               </div>
+
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="checkbox2">
-                <label class="custom-control-label label-title" for="checkbox2">Not shipped product</label>
+                <label class="custom-control-label label-title disabled" for="checkbox2" >Not shipped product</label>
               </div>
 
             </div>

@@ -591,7 +591,9 @@ hr {
 .card-brand-content{background: #f4f4f4;margin-top: 30%;}
 .card-brand-content .card-header{background: #ccc;}
 
-
+.disabled {
+  color:gray;
+}
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors

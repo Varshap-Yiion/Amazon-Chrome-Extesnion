@@ -1307,7 +1307,8 @@ export class AppComponent {
       id: 245,
       code: "zw",
       name: "Zimbabwe"
-    }];
+    }
+    ];
 
   constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef,
               public zone: NgZone, public  _appService: AppService, private  modalService: NgbModal, private http: HttpClient) {
@@ -1412,25 +1413,87 @@ export class AppComponent {
     this.filteredProductList = this.productList;
     this.filterMinimumStock();
     this.filterTradeMark();
+    this.filterCloudeInventory();
+    this.filterCriticalBrand();
+    this.filterDiscountedProduct();
+    this.filterRequierdSelectionProduct();
+    this.filterAmazonPrime();
+    this.filterSBATag();
     this.finalProductList = this.filteredProductList;
     this.readyColums();
   }
 
   filterMinimumStock() {
     if (!this.minimum_stock) return;
-    if (!this.minimum_stock == 0) return;
+    // if (!this.minimum_stock == 0) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
       if (item.quantity > this.minimum_stock)
         return item;
-    })
+    });
   }
 
   filterTradeMark() {
     if (!this.trademarked_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
-      if (item.quantity > this.minimum_stock)
+      console.log(item.brand);
+      console.log(item.trademarklist);
+      console.log('brand');
+
+      if (item.brand !== this.trademarklist)
         return item;
-    })
+    });
+  }
+
+  filterCloudeInventory() {
+    if (!this.cloud_inventory_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.brand !== this.cloudinventroylist)
+        return item;
+    });
+  }
+
+  filterCriticalBrand() {
+    if (!this.critical_branded_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.brand !== this.criticalbrandlist)
+        return item;
+    });
+  }
+
+  filterDiscountedProduct() {
+    if (!this.discounted_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+
+      if (item.discounted_price === null)
+        return item;
+    });
+  }
+
+  filterRequierdSelectionProduct() {
+    if (!this.requiring_selection_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+
+      if (item.style_selection === null && item.color_selection === null && item.size_selection === null)
+        return item;
+    });
+  }
+
+  filterAmazonPrime() {
+    if (!this.amazon_prime_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+
+      if (item.amazon_prime === null)
+        return item;
+    });
+  }
+
+  filterSBATag() {
+    if (!this.SBA_tag) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+
+      if (item.SBA === null)
+        return item;
+    });
   }
 
   readyColums() {
@@ -1446,15 +1509,15 @@ export class AppComponent {
         'Price': item.price,
         'Brand': item.brand,
         'Quantity': item.quantity,
-        'Profit Margin': itemNewPrice,
-        'Amazon Commision': amazon_commision,
-        'Exchange Difference (CAD)': exchanged_price,
+        'Profit Margin':  parseFloat(itemNewPrice.toFixed(2)),
+        'Amazon Commision': parseFloat(amazon_commision.toFixed(2)),
+        'Exchange Difference (CAD)': parseFloat(exchanged_price.toFixed(2)),
         'Stock Code': this.generateStockCode(),
-        'Minimum Price': minimum_price,
-        'Maximum Price': maximum_price,
-      }
+        'Minimum Price': parseFloat(minimum_price.toFixed(2)),
+        'Maximum Price': parseFloat(maximum_price.toFixed(2))
+      };
       return newitem;
-    })
+    });
 
     console.log(this.productList);
     console.log(this.finalProductList);
@@ -1466,6 +1529,7 @@ export class AppComponent {
   }
 
   calculateProfitMargin(price) {
+    if (!this.profit_margin) return;
     price = this.floatPrice(price);
     if (this.profit_margin && this.profit_margin > 0) {
       return price + ( (price * this.profit_margin) / 100);
@@ -1475,6 +1539,7 @@ export class AppComponent {
   }
 
   calculateAmazonCommision(price) {
+    if (!this.amazon_commision) return;
     if (this.amazon_commision && this.amazon_commision > 0) {
       return price + ( (price * this.amazon_commision) / 100);
     } else {
@@ -1483,6 +1548,7 @@ export class AppComponent {
   }
 
   calculateExchangedPrice(price) {
+    if (!this.exchange_difference) return;
     if (this.exchange_difference && this.exchange_difference > 0) {
       return price * this.exchange_difference;
     } else {
@@ -1491,6 +1557,7 @@ export class AppComponent {
   }
 
   calculateMinimumPrice(price) {
+    if (!this.minimum_price) return;
     if (this.minimum_price && this.minimum_price > 0) {
       return price - ((this.minimum_price * price) / 100);
     } else {
@@ -1499,6 +1566,7 @@ export class AppComponent {
   }
 
   calculateMaximumPrice(price) {
+    if (!this.maximum_price) return;
     if (this.maximum_price && this.maximum_price > 0) {
       return price + ((this.maximum_price * price) / 100);
     } else {
@@ -1507,6 +1575,7 @@ export class AppComponent {
   }
 
   generateStockCode() {
+    if (!this.sku_code) return;
     let code = this.sku_code + this.sku_start_from.toString();
     this.sku_start_from = this.sku_start_from + 1;
     return code;
@@ -1524,6 +1593,15 @@ export class AppComponent {
       let product_quantity_arr = parsedHtml.getElementById('quantity').innerHTML.match(/<option[^>]*>([^<]*)<\/option>/g);
       let product_quantity = product_quantity_arr[product_quantity_arr.length - 1].replace(/(<([^>]+)>)/ig, "").trim();
       product_quantity = product_quantity.replace("+", "");
+
+      let product_discounted_price = parsedHtml.getElementById('regularprice_savings').textContent.trim();
+
+      let product_style_selection = parsedHtml.getElementById('style_name_0');
+      let product_color_selection = parsedHtml.getElementById('color_name_0');
+      let product_size_selection = parsedHtml.getElementById('size_name_0');
+      let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover').textContent.trim();
+      let product_sold_by = parsedHtml.getElementById('merchant-info').textContent.trim();
+
 
       this.product_price = parseFloat(product_price.split('$')[1]);
       this.min_stock = (this.minimum_stock) ? (this.minimum_stock) : '';
@@ -1547,6 +1625,13 @@ export class AppComponent {
         'price': product_price,
         'brand': product_brand,
         'quantity': product_quantity,
+        'discounted_price': product_discounted_price,
+        'style_selection': product_style_selection,
+        'color_selection': product_color_selection,
+        'size_selection': product_size_selection,
+        'amazon_prime': product_amazon_prime,
+        'SBA': product_sold_by,
+
       };
 
       this.productList = this.productList.concat(_result);
