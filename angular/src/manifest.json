@@ -7,7 +7,7 @@
   "permissions": ["tabs"],
   "browser_action": {
     "default_popup": "index.html",
-    "default_icon": "assets/icon.png",
+    "default_icon": "assets/amazon-logo.png",
     "default_title": "Amazon Tool Chrome Extension"
   },
   "content_scripts": [
