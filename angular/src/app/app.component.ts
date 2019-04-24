@@ -1322,12 +1322,9 @@ export class AppComponent {
 
 
   doSearchDownload(): void {
-<<<<<<< HEAD
     console.log(this.minimum_stock);
-
     console.log('11111');
-=======
->>>>>>> b39b4109d756071b8b180525542b1a1ef1eea6da
+
     chrome.tabs.query({
       currentWindow: true,
       active: true
@@ -1349,7 +1346,7 @@ export class AppComponent {
 
   changeAddress() {
     if (this.country_list != null) {
-      
+
       this.isoCountries.filter(it => {
         if (it.id == this.country_list) {
           this.country = it;
