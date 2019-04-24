@@ -20,11 +20,11 @@ export class AppComponent {
   productList1: any = [];
   from_page: number;
   to_page: number;
-  minimum_stock: number;
-  minimum_price: number;
-  maximum_price: number;
+  minimum_stock: number = 20;
+  minimum_price: number = 10;
+  maximum_price: number = 20;
   public brands: any;
-  public products: any;
+  public products: any = 'Product';
   public product: any;
   country_list: any;
   countryData: any;
@@ -61,10 +61,10 @@ export class AppComponent {
   public exchangedifference: any;
   public product_quantity: number;
   public product_price: number;
-  public sku_code: number;
-  public profit_margin: number;
-  public amazon_commision: number;
-  public exchange_difference: number;
+  public sku_code: any = 'AKS';
+  public profit_margin: number = 25;
+  public amazon_commision: number = 20;
+  public exchange_difference: number = 1.35;
   public skucode: any;
   public result1: any = [];
   tabUrl: string;
@@ -1320,7 +1320,10 @@ export class AppComponent {
     this.savetrademark();
   }
 
+
   doSearchDownload(): void {
+    console.log(this.minimum_stock);
+
     console.log('11111');
     chrome.tabs.query({
       currentWindow: true,
@@ -3376,7 +3379,7 @@ console.log('33333');
       }
 
       else if (this.exchangedifference !== '' && this.skucode !== '') {
-        console.log('amazon sku');
+        console.log('exchange sku');
 
         let _result1 = {
           'Product Title': product_title,
@@ -3460,6 +3463,37 @@ console.log('33333');
           'Brand': product_brand,
           'Quantity': product_quantity,
           'Exchange rate difference': this.exch_difference,
+        };
+
+        this.productList = this.productList.concat(_result);
+        console.log(this.productList);
+        if (is_last === true) {
+          this.downloadCsv();
+        }
+      }
+
+      else if (this.skucode !== '') {
+        console.log('sku');
+
+        let _result1 = {
+          'Product Title': product_title,
+          'Price': product_price,
+          'Brand': product_brand,
+          'Quantity': product_quantity
+        };
+
+        this.productList1 = this.productList1.concat(_result1);
+        console.log(this.productList);
+        let sku_code1 = this.sku_code + '1000' + this.productList1.length;
+        console.log(sku_code1);
+
+
+        let _result = {
+          'Product Title': product_title,
+          'Price': product_price,
+          'Brand': product_brand,
+          'Quantity': product_quantity,
+          'SKU Code': sku_code1,
         };
 
         this.productList = this.productList.concat(_result);
@@ -3571,14 +3605,14 @@ console.log('33333');
     }  else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.exchangedifference !== '')  {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
-    } else if (this.profitmargin !== '' && this.amazoncommision !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision', 'SKU Code'];
+    } else if (this.skucode !== '' && this.profitmargin !== '' && this.amazoncommision !== '' )  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Profit Margin', 'Amazon Commision'];
 
-    } else if (this.profitmargin !== '' && this.exchangedifference !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Exchange Difference (CAD)', 'SKU Code'];
+    } else if (this.skucode !== '' && this.profitmargin !== '' && this.exchangedifference !== '')  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Profit Margin', 'Exchange Difference (CAD)'];
 
-    }else if (this.amazoncommision !== '' && this.exchangedifference !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'Exchange Difference (CAD)', 'SKU Code'];
+    }else if (this.skucode !== '' && this.amazoncommision !== '' && this.exchangedifference !== '')  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
     } else if (this.profitmargin !== '' && this.amazoncommision !== '')  {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision'];
@@ -3586,17 +3620,17 @@ console.log('33333');
     }  else if (this.profitmargin !== '' && this.exchangedifference !== '')  {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Exchange Difference (CAD)'];
 
-    }  else if (this.profitmargin !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'SKU Code'];
+    }  else if (this.skucode  !== '' && this.profitmargin !== '')  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Profit Margin'];
 
     } else if (this.amazoncommision !== '' && this.exchangedifference !== '')  {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'Exchange Difference (CAD)'];
 
-    } else if (this.amazoncommision !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Amazon Commision', 'SKU Code'];
+    } else if (this.skucode !== '' && this. amazoncommision !== '')  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Amazon Commision' ];
 
-    } else if (this.exchangedifference !== '' && this.skucode !== '')  {
-      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Exchange Difference (CAD)', 'SKU Code'];
+    } else if (this.skucode !== '' && this.exchangedifference !== '')  {
+      var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'SKU Code', 'Exchange Difference (CAD)'];
 
     }  else if (this.profitmargin !== '')  {
       var head = ['Product Title', 'Price', 'Brand', 'Quantity', 'Profit Margin'];

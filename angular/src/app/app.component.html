@@ -3,7 +3,7 @@
 <div class="header">
 <nav class="pos-f-t ">
 <nav class="navbar navbar-dark bg-dark">
-<a class="navbar-brand" href="#"><img src="assets/amazon-logo.png"> Amazon Tool</a>
+<a class="navbar-brand" href="#"><img src="assets/amazon-logo1.png"> Amazon Tool</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
@@ -163,7 +163,7 @@ style="width: 20px;float:right;"></h6>
                 <!--<option value="" selected="selected">Please select</option>-->
                 <option *ngFor="let country of isoCountries" [value]="country.id">{{country.name}}</option>
 
-                
+
                 <!--<option value="Afghanistan">Afghanistan</option>-->
                 <!--<option value="Aland Islands">Aland Islands</option>-->
                 <!--<option value="Albania">Albania</option>-->
@@ -419,7 +419,8 @@ style="width: 20px;float:right;"></h6>
                   <span class="inner-text">We do not add products with low inventory </span>
                 </div>
                 <div class="col-3">
-                  <input id="number" min="1" type="number" placeholder="20" value="20" [(ngModel)]="minimum_stock" name="minimum_stock_field"
+                  <input id="number" min="1" type="number" placeholder="20" value="20" [(ngModel)]="minimum_stock"
+                          name="minimum_stock_field"
                          #minimum_stock_field="ngModel" class="form-control">
                 </div>
               </div>
@@ -736,7 +737,7 @@ style="width: 20px;float:right;"></h6>
                 </div>
                 <div class="col-5">
                   <div class="input-group mb-3">
-                    <input name="products" type="text" placeholder="product" value="products" class="form-control" [(ngModel)]="products" name="product"
+                    <input type="text" placeholder="product" value="products" class="form-control" [(ngModel)]="products" name="product"
                            #product="ngModel">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1">.csv</span>
