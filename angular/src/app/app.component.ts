@@ -2,7 +2,6 @@ import {ApplicationRef, ChangeDetectorRef, Component, Inject, NgZone, ViewChild}
 import {TAB_ID} from './tab-id.injector';
 import {Angular5Csv} from "angular5-csv/dist/Angular5-csv";
 import {AppService} from "./app.service";
-import {NgbActiveModal, NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -10,7 +9,6 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-// tslint:disable:variable-name
 export class AppComponent {
   readonly tabId = this._tabId;
   message: string;
@@ -26,9 +24,24 @@ export class AppComponent {
   minimum_price: number = 10;
   maximum_price: number = 20;
   sku_start_from: number = 1001;
-  public brands: any;
   public products: any = 'Product';
-  public product: any;
+  public product_title: any;
+  public product_price1: any;
+  public product_brand1: any;
+  public product_quantity: any;
+  public sold_by_amazon1: any;
+  public shipment_and_tax_fee_uncertain_product: any;
+  public not_shipped_product1: any;
+  public product_quantity_arr: any;
+  public sold_by_amazon: any;
+  public shipment_and_tax_fee_uncertain_product1: any;
+  public discounted_price: any;
+  public product_style_selection: any;
+  public product_color_selection: any;
+  public product_size_selection: any;
+  public product_amazon_prime: any;
+  public add_on_product: any;
+  public shipment_and_tax_fee_uncertain: any;
   country_list: any;
   countryData: any;
   country: any;
@@ -36,46 +49,24 @@ export class AppComponent {
   public cloudinventroylist: any = [];
   public criticalbrandlist: any;
   public trademarked_product: any;
-  public trademarkedproduct: any;
   public cloud_inventory_product: any;
-  public cloudinventoryproduct: any;
   public critical_branded_product: any;
-  public criticalbrandedproduct: any;
   public discounted_product: any;
-  public discountedproduct: any;
-  public shipment_tax_product: any;
-  public shipmenttaxproduct: any;
+  public shipment_tax_uncertain_product: any;
   public requiring_selection_product: any;
-  public requiringselectionproduct: any;
   public amazon_prime_product: any;
-  public amazonprimeproduct: any;
-  public SBA_tag: any;
-  public SBAtag: any;
-  public min_stock: any;
-  public mini_price: any;
-  public maxi_price: any;
-  public min_price: any;
-  public max_price: any;
-  public pro_margin: any;
-  public ama_commision: any;
-  public exch_difference: any;
-  public profitmargin: any;
-  public amazoncommision: any;
-  public exchangedifference: any;
-  public product_quantity: number;
+  public sba_tag: any;
+  public add_on: any;
+  public not_shipped_product: any;
   public product_price: number;
   public sku_code: any = 'AKS';
   public profit_margin: number = 25;
   public amazon_commision: number = 20;
   public exchange_difference: number = 1.35;
-  public skucode: any;
-  public result1: any = [];
   tabUrl: string;
-  asinNumber: any = [];
   product_brand: any = [];
   tabs: any = [];
   overlaypopup: boolean = false;
-  public brandlist: any = [];
   edittrademarkbox: boolean = false;
   editcloudinventorybox: boolean = false;
   editcriticalbrandbox: boolean = false;
@@ -1308,11 +1299,10 @@ export class AppComponent {
       code: "zw",
       name: "Zimbabwe"
     }
-    ];
+  ];
 
   constructor(@Inject(TAB_ID) public _tabId: number, public _changeDetector: ChangeDetectorRef, public _applicationRef: ApplicationRef,
-              public zone: NgZone, public  _appService: AppService, private  modalService: NgbModal, private http: HttpClient) {
-    // this._changeDetector.markForCheck();
+              public zone: NgZone, public  _appService: AppService, private http: HttpClient) {
   }
 
   ngOnInit() {
@@ -1327,9 +1317,6 @@ export class AppComponent {
 
 
   doSearchDownload(): void {
-    console.log(this.minimum_stock);
-    console.log('11111');
-
     chrome.tabs.query({
       currentWindow: true,
       active: true
@@ -1367,8 +1354,6 @@ export class AppComponent {
 
       var change_add_url = 'https://www.amazon.com/gp/delivery/ajax/address-change.html';
       this._appService.changeAdd(this.countryData.locationType, this.countryData.district, this.countryData.countryCode, change_add_url).subscribe((data) => {
-        // this.doSearchDownload();
-        // this.processMainlist(this.tabUrl);
 
       });
     }
@@ -1416,9 +1401,12 @@ export class AppComponent {
     this.filterCloudeInventory();
     this.filterCriticalBrand();
     this.filterDiscountedProduct();
+    this.filterShippedTaxFeeUncertain();
     this.filterRequierdSelectionProduct();
     this.filterAmazonPrime();
     this.filterSBATag();
+    this.filterAddOn();
+    this.filterNotShippedProduct();
     this.finalProductList = this.filteredProductList;
     this.readyColums();
   }
@@ -1435,12 +1423,9 @@ export class AppComponent {
   filterTradeMark() {
     if (!this.trademarked_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
-      console.log(item.brand);
-      console.log(item.trademarklist);
-      console.log('brand');
-
       if (item.brand !== this.trademarklist)
-        return item;
+        console.log(item);
+      return item;
     });
   }
 
@@ -1463,8 +1448,15 @@ export class AppComponent {
   filterDiscountedProduct() {
     if (!this.discounted_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.discounted_price === true)
+        return item;
+    });
+  }
 
-      if (item.discounted_price === null)
+  filterShippedTaxFeeUncertain() {
+    if (!this.shipment_tax_uncertain_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.shipment_and_tax_fee_uncertain === false)
         return item;
     });
   }
@@ -1472,8 +1464,7 @@ export class AppComponent {
   filterRequierdSelectionProduct() {
     if (!this.requiring_selection_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
-
-      if (item.style_selection === null && item.color_selection === null && item.size_selection === null)
+      if (item.style_selection === true && item.color_selection === true && item.size_selection === true)
         return item;
     });
   }
@@ -1481,17 +1472,31 @@ export class AppComponent {
   filterAmazonPrime() {
     if (!this.amazon_prime_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
-
-      if (item.amazon_prime === null)
+      if (item.amazon_prime === true)
         return item;
     });
   }
 
   filterSBATag() {
-    if (!this.SBA_tag) return;
+    if (!this.sba_tag) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.sba_tag_product === false)
+        return item;
+    });
+  }
 
-      if (item.SBA === null)
+  filterAddOn() {
+    if (!this.add_on) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.addon === true)
+        return item;
+    });
+  }
+
+  filterNotShippedProduct() {
+    if (!this.not_shipped_product) return;
+    this.filteredProductList = this.filteredProductList.filter(item => {
+      if (item.notshipped_product === false)
         return item;
     });
   }
@@ -1509,7 +1514,7 @@ export class AppComponent {
         'Price': item.price,
         'Brand': item.brand,
         'Quantity': item.quantity,
-        'Profit Margin':  parseFloat(itemNewPrice.toFixed(2)),
+        'Profit Margin': parseFloat(itemNewPrice.toFixed(2)),
         'Amazon Commision': parseFloat(amazon_commision.toFixed(2)),
         'Exchange Difference (CAD)': parseFloat(exchanged_price.toFixed(2)),
         'Stock Code': this.generateStockCode(),
@@ -1587,50 +1592,98 @@ export class AppComponent {
     this._appService.getURLData(url).subscribe((data) => {
       let parser = new DOMParser();
       let parsedHtml = parser.parseFromString(data, 'text/html');
-      let product_title = parsedHtml.getElementById('productTitle').innerText.trim();
-      let product_price = parsedHtml.getElementById('priceblock_ourprice').innerText.trim();
-      let product_brand = parsedHtml.getElementById('bylineInfo').innerText.trim();
-      let product_quantity_arr = parsedHtml.getElementById('quantity').innerHTML.match(/<option[^>]*>([^<]*)<\/option>/g);
-      let product_quantity = product_quantity_arr[product_quantity_arr.length - 1].replace(/(<([^>]+)>)/ig, "").trim();
+      let product_title = parsedHtml.getElementById('productTitle');
+      if (product_title !== null) {
+        this.product_title = product_title.innerText.trim();
+      } else {
+        this.product_title = false;
+      }
+      let product_price = parsedHtml.getElementById('priceblock_ourprice');
+      if (product_price !== null) {
+        this.product_price1 = product_price.innerText.trim();
+      }
+
+      let product_brand = parsedHtml.getElementById('bylineInfo');
+      if (product_brand !== null) {
+        this.product_brand1 = product_brand.innerText.trim();
+
+      }
+      let product_quantity_arr = parsedHtml.getElementById('quantity');
+      if (product_quantity_arr !== null) {
+       this.product_quantity_arr = product_quantity_arr.innerHTML.match(/<option[^>]*>([^<]*)<\/option>/g);
+      let product_quantity = this.product_quantity_arr[this.product_quantity_arr.length - 1].replace(/(<([^>]+)>)/ig, "").trim();
       product_quantity = product_quantity.replace("+", "");
+      this.product_quantity = product_quantity;
+      }
 
-      let product_discounted_price = parsedHtml.getElementById('regularprice_savings').textContent.trim();
+      let product_discounted_price = parsedHtml.getElementById('regularprice_savings');
+      if (product_discounted_price !== null) {
+        this.discounted_price = false;
+      } else {
+        this.discounted_price = true;
+      }
 
-      let product_style_selection = parsedHtml.getElementById('style_name_0');
-      let product_color_selection = parsedHtml.getElementById('color_name_0');
-      let product_size_selection = parsedHtml.getElementById('size_name_0');
-      let product_amazon_prime = parsedHtml.getElementById('primeUpsellPopover').textContent.trim();
-      let product_sold_by = parsedHtml.getElementById('merchant-info').textContent.trim();
+      let style_selection = parsedHtml.getElementById('style_name_0');
+      let color_selection = parsedHtml.getElementById('color_name_0');
+      let size_selection = parsedHtml.getElementById('size_name_0');
+      if (style_selection !== null && color_selection !== null && size_selection !== null) {
+        this.product_style_selection = false;
+        this.product_color_selection = false;
+        this.product_size_selection = false;
+      } else {
+        this.product_style_selection = true;
+        this.product_color_selection = true;
+        this.product_size_selection = true;
+      }
 
+      let amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
+      if (amazon_prime !== null) {
+        this.product_amazon_prime = false;
+      } else {
+        this.product_amazon_prime = true;
+      }
 
-      this.product_price = parseFloat(product_price.split('$')[1]);
-      this.min_stock = (this.minimum_stock) ? (this.minimum_stock) : '';
-      this.mini_price = (this.minimum_price) ? (this.minimum_price) : '';
-      this.maxi_price = (this.maximum_price) ? (this.maximum_price) : '';
-      this.skucode = (this.sku_code) ? (this.sku_code) : '';
-      this.profitmargin = (this.profit_margin) ? (this.profit_margin) : '';
-      this.amazoncommision = (this.amazon_commision) ? (this.amazon_commision) : '';
-      this.exchangedifference = (this.exchange_difference) ? (this.exchange_difference) : '';
-      this.trademarkedproduct = (this.trademarked_product) ? (this.trademarked_product) : '';
-      this.discountedproduct = (this.discounted_product) ? (this.discounted_product) : '';
-      this.requiringselectionproduct = (this.requiring_selection_product) ? (this.requiring_selection_product) : '';
-      this.amazonprimeproduct = (this.amazon_prime_product) ? (this.amazon_prime_product) : '';
-      this.cloudinventoryproduct = (this.cloud_inventory_product) ? (this.cloud_inventory_product) : '';
-      this.criticalbrandedproduct = (this.critical_branded_product) ? (this.critical_branded_product) : '';
-      this.SBAtag = (this.SBA_tag) ? (this.SBA_tag) : '';
-      this.product = (this.products) ? (this.products) : '';
+      let sold_by_amazon = parsedHtml.getElementById('merchant-info');
+      if (sold_by_amazon !== null) {
+      this.sold_by_amazon = sold_by_amazon.innerText.trim();
+        this.sold_by_amazon1 = this.sold_by_amazon.includes('Amazon');
+      }
+
+      let add_on_item = parsedHtml.getElementById('addon');
+      if (add_on_item !== null) {
+        this.add_on_product = false;
+      } else {
+        this.add_on_product = true;
+      }
+
+      let shipment_and_tax_fee_uncertain_product = parsedHtml.getElementById('priceblock_ourprice_row');
+      if (shipment_and_tax_fee_uncertain_product !== null) {
+        this.shipment_and_tax_fee_uncertain_product = shipment_and_tax_fee_uncertain_product.innerText.trim();
+        this.shipment_and_tax_fee_uncertain_product1 = this.shipment_and_tax_fee_uncertain_product.includes('Import Fees Deposit');
+      }
+
+      let not_shipped_product = parsedHtml.getElementById('delivery-message');
+      if (not_shipped_product !== null) {
+        this.not_shipped_product = not_shipped_product.innerText.trim();
+        this.not_shipped_product1 = this.not_shipped_product.includes('This item does not ship to');
+      }
+
+      this.product_price = parseFloat(this.product_price1.split('$')[1]);
 
       let _result = {
-        'title': product_title,
-        'price': product_price,
-        'brand': product_brand,
-        'quantity': product_quantity,
-        'discounted_price': product_discounted_price,
-        'style_selection': product_style_selection,
-        'color_selection': product_color_selection,
-        'size_selection': product_size_selection,
-        'amazon_prime': product_amazon_prime,
-        'SBA': product_sold_by,
+        'title': this.product_title,
+        'price': this.product_price1,
+        'brand': this.product_brand1,
+        'quantity': this.product_quantity,
+        'discounted_price': this.discounted_price,
+        'style_selection': this.product_style_selection,
+        'color_selection': this.product_color_selection,
+        'size_selection': this.product_size_selection,
+        'amazon_prime': this.product_amazon_prime,
+        'sba_tag_product': this.sold_by_amazon1,
+        'addon': this.add_on_product,
+        'shipment_and_tax_fee_uncertain': this.shipment_and_tax_fee_uncertain_product1,
+        'notshipped_product': this.not_shipped_product1,
 
       };
 
@@ -1644,7 +1697,7 @@ export class AppComponent {
 
   downloadCsv() {
     var head = ['Title', 'Price', 'Brand', 'Quantity', 'Profit Margin', 'Amazon Commision', 'Exchange Difference', 'Stock Code', 'Minimum Price', 'Maximum Price'];
-    new Angular5Csv(this.finalProductList, this.product, {headers: (head)});
+    new Angular5Csv(this.finalProductList, this.products, {headers: (head)});
     this.overlaypopup = false;
   }
 
