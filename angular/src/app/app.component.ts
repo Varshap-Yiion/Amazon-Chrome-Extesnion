@@ -32,6 +32,7 @@ export class AppComponent {
   public sold_by_amazon1: any;
   public shipment_and_tax_fee_uncertain_product: any;
   public not_shipped_product1: any;
+  public not_shipped_product2: any;
   public product_quantity_arr: any;
   public sold_by_amazon: any;
   public shipment_and_tax_fee_uncertain_product1: any;
@@ -58,6 +59,15 @@ export class AppComponent {
   public sba_tag: any;
   public add_on: any;
   public not_shipped_product: any;
+  public itemNewPrice1: any;
+  public amazon_commision1: any;
+  public exchanged_price1: any;
+  public skucode1: any;
+  public minimum_price1: any;
+  public maximum_price1: any;
+
+
+
   public product_price: number;
   public sku_code: any = 'AKS';
   public profit_margin: number = 25;
@@ -1369,7 +1379,8 @@ export class AppComponent {
   }
 
   getAsinList(url, is_last) {
-    this._appService.getURLData(url).subscribe((data) => {
+     this._appService.getURLData(url).subscribe((data) => {
+      if (data !== null) {
       let result = data.match(/data-asin="[A-Za-z0-9]*"/g);
       result = result.map(item => {
         item = item.replace('data-asin=', '');
@@ -1383,6 +1394,9 @@ export class AppComponent {
       });
       if (is_last === true) {
         this.processForAsin();
+      }
+      } else {
+        return null;
       }
     });
   }
@@ -1424,7 +1438,6 @@ export class AppComponent {
     if (!this.trademarked_product) return;
     this.filteredProductList = this.filteredProductList.filter(item => {
       if (item.brand !== this.trademarklist)
-        console.log(item);
       return item;
     });
   }
@@ -1503,23 +1516,56 @@ export class AppComponent {
 
   readyColums() {
     this.finalProductList = this.finalProductList.map(item => {
+
       let itemNewPrice = this.calculateProfitMargin(item.price);
+      if (itemNewPrice !== undefined) {
+        this.itemNewPrice1 = parseFloat(itemNewPrice.toFixed(2));
+      } else {
+        this.itemNewPrice1 = '';
+      }
       let amazon_commision = this.calculateAmazonCommision(itemNewPrice);
+      if (amazon_commision !== undefined) {
+        this.amazon_commision1 = parseFloat(amazon_commision.toFixed(2));
+      } else {
+        this.amazon_commision1 = '';
+      }
       let exchanged_price = this.calculateExchangedPrice(amazon_commision);
-      let minimum_price = this.calculateMinimumPrice(exchanged_price);
-      let maximum_price = this.calculateMaximumPrice(exchanged_price);
+      if (exchanged_price !== undefined) {
+        this.exchanged_price1 = parseFloat(exchanged_price.toFixed(2));
+      } else {
+        this.exchanged_price1 = '';
+      }
+      let skucode = this.generateStockCode();
+      if (skucode !== undefined) {
+        this.skucode1 = skucode;
+      } else {
+        this.skucode1 = '';
+      }
+      let minimum_price = this.calculateMinimumPrice(amazon_commision);
+      if (minimum_price !== undefined) {
+        this.minimum_price1 = parseFloat(minimum_price.toFixed(2));
+      } else {
+        this.minimum_price1 = '';
+      }
+      let maximum_price = this.calculateMaximumPrice(amazon_commision);
+      if (maximum_price !== undefined) {
+        this.maximum_price1 = parseFloat(maximum_price.toFixed(2));
+      } else {
+        this.maximum_price1 = '';
+      }
+
 
       let newitem = {
         'Title': item.title,
         'Price': item.price,
         'Brand': item.brand,
         'Quantity': item.quantity,
-        'Profit Margin': parseFloat(itemNewPrice.toFixed(2)),
-        'Amazon Commision': parseFloat(amazon_commision.toFixed(2)),
-        'Exchange Difference (CAD)': parseFloat(exchanged_price.toFixed(2)),
-        'Stock Code': this.generateStockCode(),
-        'Minimum Price': parseFloat(minimum_price.toFixed(2)),
-        'Maximum Price': parseFloat(maximum_price.toFixed(2))
+        'Profit Margin': this.itemNewPrice1,
+        'Amazon Commision': this.amazon_commision1,
+        'Exchange Difference (CAD)': this.exchanged_price1,
+        'Stock Code': this.skucode1,
+        'Minimum Price':  this.minimum_price1,
+        'Maximum Price': this.maximum_price1
       };
       return newitem;
     });
@@ -1534,7 +1580,7 @@ export class AppComponent {
   }
 
   calculateProfitMargin(price) {
-    if (!this.profit_margin) return;
+    if (this.profit_margin === null) return;
     price = this.floatPrice(price);
     if (this.profit_margin && this.profit_margin > 0) {
       return price + ( (price * this.profit_margin) / 100);
@@ -1544,7 +1590,7 @@ export class AppComponent {
   }
 
   calculateAmazonCommision(price) {
-    if (!this.amazon_commision) return;
+    if (this.amazon_commision === null) return;
     if (this.amazon_commision && this.amazon_commision > 0) {
       return price + ( (price * this.amazon_commision) / 100);
     } else {
@@ -1553,8 +1599,8 @@ export class AppComponent {
   }
 
   calculateExchangedPrice(price) {
-    if (!this.exchange_difference) return;
-    if (this.exchange_difference && this.exchange_difference > 0) {
+    if (this.exchange_difference === null) return;
+    if (this.exchange_difference !== null && this.exchange_difference > 0) {
       return price * this.exchange_difference;
     } else {
       return price;
@@ -1562,7 +1608,7 @@ export class AppComponent {
   }
 
   calculateMinimumPrice(price) {
-    if (!this.minimum_price) return;
+    if (this.minimum_price === null) return;
     if (this.minimum_price && this.minimum_price > 0) {
       return price - ((this.minimum_price * price) / 100);
     } else {
@@ -1571,7 +1617,7 @@ export class AppComponent {
   }
 
   calculateMaximumPrice(price) {
-    if (!this.maximum_price) return;
+    if (this.maximum_price === null) return;
     if (this.maximum_price && this.maximum_price > 0) {
       return price + ((this.maximum_price * price) / 100);
     } else {
@@ -1579,11 +1625,16 @@ export class AppComponent {
     }
   }
 
+
   generateStockCode() {
-    if (!this.sku_code) return;
+    if (this.sku_code === null) return;
+    if (this.sku_code !== null) {
     let code = this.sku_code + this.sku_start_from.toString();
     this.sku_start_from = this.sku_start_from + 1;
     return code;
+    } else {
+      return '';
+    }
   }
 
   getAsinDetail($asin, is_last) {
@@ -1595,8 +1646,6 @@ export class AppComponent {
       let product_title = parsedHtml.getElementById('productTitle');
       if (product_title !== null) {
         this.product_title = product_title.innerText.trim();
-      } else {
-        this.product_title = false;
       }
       let product_price = parsedHtml.getElementById('priceblock_ourprice');
       if (product_price !== null) {
@@ -1606,8 +1655,8 @@ export class AppComponent {
       let product_brand = parsedHtml.getElementById('bylineInfo');
       if (product_brand !== null) {
         this.product_brand1 = product_brand.innerText.trim();
-
       }
+
       let product_quantity_arr = parsedHtml.getElementById('quantity');
       if (product_quantity_arr !== null) {
        this.product_quantity_arr = product_quantity_arr.innerHTML.match(/<option[^>]*>([^<]*)<\/option>/g);
@@ -1623,24 +1672,30 @@ export class AppComponent {
         this.discounted_price = true;
       }
 
-      let style_selection = parsedHtml.getElementById('style_name_0');
-      let color_selection = parsedHtml.getElementById('color_name_0');
-      let size_selection = parsedHtml.getElementById('size_name_0');
-      if (style_selection !== null && color_selection !== null && size_selection !== null) {
-        this.product_style_selection = false;
-        this.product_color_selection = false;
-        this.product_size_selection = false;
-      } else {
+      let style_selection = parsedHtml.getElementById('variation_style_name');
+      let color_selection = parsedHtml.getElementById('variation_color_name');
+      let size_selection = parsedHtml.getElementById('variation_size_name');
+
+      if (style_selection == null && color_selection == null && size_selection == null) {
         this.product_style_selection = true;
         this.product_color_selection = true;
         this.product_size_selection = true;
+      } else {
+        this.product_style_selection = false;
+        this.product_color_selection = false;
+        this.product_size_selection = false;
       }
 
-      let amazon_prime = parsedHtml.getElementById('primeUpsellPopover');
-      if (amazon_prime !== null) {
-        this.product_amazon_prime = false;
-      } else {
+      let amazon_prime = parsedHtml.getElementById('primeUpsellPopover') || parsedHtml.getElementById('pwTeenMessaging_feature_div');
+      if (amazon_prime == null) {
         this.product_amazon_prime = true;
+      } else {
+        let amazon_prime1 = amazon_prime.innerText.trim();
+        if (amazon_prime1 == '') {
+          this.product_amazon_prime = true;
+        } else {
+          this.product_amazon_prime = false;
+        }
       }
 
       let sold_by_amazon = parsedHtml.getElementById('merchant-info');
@@ -1650,10 +1705,10 @@ export class AppComponent {
       }
 
       let add_on_item = parsedHtml.getElementById('addon');
-      if (add_on_item !== null) {
-        this.add_on_product = false;
-      } else {
+      if (add_on_item == null) {
         this.add_on_product = true;
+      } else {
+        this.add_on_product = false;
       }
 
       let shipment_and_tax_fee_uncertain_product = parsedHtml.getElementById('priceblock_ourprice_row');
@@ -1664,8 +1719,8 @@ export class AppComponent {
 
       let not_shipped_product = parsedHtml.getElementById('delivery-message');
       if (not_shipped_product !== null) {
-        this.not_shipped_product = not_shipped_product.innerText.trim();
-        this.not_shipped_product1 = this.not_shipped_product.includes('This item does not ship to');
+        this.not_shipped_product1 = not_shipped_product.innerText.trim();
+        this.not_shipped_product2 = this.not_shipped_product1.includes('This item does not ship to');
       }
 
       this.product_price = parseFloat(this.product_price1.split('$')[1]);
@@ -1683,7 +1738,7 @@ export class AppComponent {
         'sba_tag_product': this.sold_by_amazon1,
         'addon': this.add_on_product,
         'shipment_and_tax_fee_uncertain': this.shipment_and_tax_fee_uncertain_product1,
-        'notshipped_product': this.not_shipped_product1,
+        'notshipped_product': this.not_shipped_product2,
 
       };
 
